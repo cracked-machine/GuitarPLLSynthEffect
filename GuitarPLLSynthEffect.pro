@@ -1,4 +1,4 @@
-update=29-03-2018 10:19:48 PM
+update=31-03-2018 12:23:44 AM
 version=1
 last_client=kicad
 [pcbnew]
@@ -68,3 +68,14 @@ LibName36=lib/barrel_jack
 LibName37=lib/pot_numbered
 LibName38=lib/socket_custom
 LibName39=lib/_TL071
+LibName40=lib/_TC7662b
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=docs/
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
