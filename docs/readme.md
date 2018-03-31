@@ -5,6 +5,7 @@
 
 <ol>
   <li>Add counter/divider to lower output pitch</li>
+  <li>Experiment with PLL demodulated output</li>
   <li>convert square VCO to triangle. Integrator?</li>
   <li>add parallel PLL's for multiple voices (with mixer OA stage)</li>
   <li>Peak detector triggered:</li>
