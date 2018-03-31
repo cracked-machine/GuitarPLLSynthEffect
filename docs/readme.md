@@ -4,8 +4,8 @@
 #TODO
 
 <ol>
-  <li>Add counter/divider</li>
-  <li>convert square VCO to triangle</li>
+  <li>Add counter/divider to lower output pitch</li>
+  <li>convert square VCO to triangle. Integrator?</li>
   <li>add parallel PLL's for multiple voices (with mixer OA stage)</li>
   <li>Peak detector triggered:</li>
     <ul>
