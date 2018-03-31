@@ -9,8 +9,8 @@
   <li>add parallel PLL's for multiple voices (with mixer OA stage)</li>
   <li>Peak detector triggered:</li>
     <ul>
-      <li>gate using CD4066></li>
-      <li>LM13700 VCA acting on PLL VCO</li>
+      <li>gate using CD4066 on PLL VCO output</li>
+      <li>LM13700 VCA acting on PLL VCO output</li>
     </ul>
 </ol>
 
