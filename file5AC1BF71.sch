@@ -1,0 +1,404 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:_4016
+LIBS:_4046
+LIBS:_40106
+LIBS:barrel_jack
+LIBS:pot_numbered
+LIBS:socket_custom
+LIBS:_TL071
+LIBS:_TC7662b
+LIBS:GuitarPLLSynthEffect-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L R R_OA_IN1
+U 1 1 5AC1C65B
+P 2350 4575
+F 0 "R_OA_IN1" H 2575 4575 50  0000 C CNN
+F 1 "2K7" H 2550 4675 50  0000 C CNN
+F 2 "" V 2280 4575 50  0001 C CNN
+F 3 "" H 2350 4575 50  0001 C CNN
+	1    2350 4575
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2350 3275 2350 4425
+Wire Wire Line
+	2350 3275 2450 3275
+Wire Wire Line
+	2350 4275 2625 4275
+Connection ~ 2350 4275
+Wire Wire Line
+	2925 4275 3225 4275
+Wire Wire Line
+	3225 4275 3225 3175
+Wire Wire Line
+	3050 3175 3625 3175
+Wire Wire Line
+	2350 4725 2350 4825
+Wire Wire Line
+	2650 2875 2650 2750
+Wire Wire Line
+	2650 3475 2650 3625
+$Comp
+L CP C_SUSTAIN1
+U 1 1 5AC1C66E
+P 3775 3175
+F 0 "C_SUSTAIN1" V 3925 2800 50  0000 L CNN
+F 1 "47nF" V 3825 2925 50  0000 L CNN
+F 2 "" H 3813 3025 50  0001 C CNN
+F 3 "" H 3775 3175 50  0001 C CNN
+	1    3775 3175
+	0    -1   -1   0   
+$EndComp
+Connection ~ 3225 3175
+$Comp
+L C C_VCO1
+U 1 1 5AC1C676
+P 4500 3475
+F 0 "C_VCO1" V 4450 3150 50  0000 L CNN
+F 1 "22nF" V 4450 3550 50  0000 L CNN
+F 2 "" H 4538 3325 50  0001 C CNN
+F 3 "" H 4500 3475 50  0001 C CNN
+	1    4500 3475
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4650 3475 4825 3475
+Wire Wire Line
+	4350 3475 4300 3475
+Wire Wire Line
+	4300 3475 4300 3575
+Wire Wire Line
+	4300 3575 4825 3575
+Wire Wire Line
+	4000 3975 4275 3975
+Wire Wire Line
+	4825 4075 4725 4075
+Wire Wire Line
+	4725 4075 4725 4475
+Wire Wire Line
+	4825 3275 4300 3275
+Text Label 6750 3175 2    60   ~ 0
+VCORETURN
+Text Label 4300 3275 0    60   ~ 0
+VCORETURN
+NoConn ~ 6225 3775
+NoConn ~ 6225 3275
+Wire Wire Line
+	5525 4225 5525 4450
+Wire Wire Line
+	5525 3025 5525 2775
+NoConn ~ 6225 3875
+NoConn ~ 4825 3875
+Wire Wire Line
+	3925 3175 4825 3175
+Wire Wire Line
+	6225 3375 7275 3375
+Wire Wire Line
+	7675 3375 7675 3825
+$Comp
+L C C_LPF1
+U 1 1 5AC1C694
+P 7675 4475
+F 0 "C_LPF1" H 7800 4525 50  0000 L CNN
+F 1 "470nF" H 7800 4425 50  0000 L CNN
+F 2 "" H 7713 4325 50  0001 C CNN
+F 3 "" H 7675 4475 50  0001 C CNN
+	1    7675 4475
+	1    0    0    -1  
+$EndComp
+Connection ~ 7675 3700
+Wire Wire Line
+	7675 3375 7575 3375
+Wire Wire Line
+	7675 4125 7675 4325
+Wire Wire Line
+	7675 4625 7675 5300
+NoConn ~ 2750 3475
+NoConn ~ 2850 3475
+NoConn ~ 6225 3975
+$Comp
+L _TL071 U_OAFX_IN1
+U 1 1 5AC1C6A3
+P 2750 3175
+F 0 "U_OAFX_IN1" H 2750 3425 50  0000 L CNN
+F 1 "_TL071" H 2750 3325 50  0000 L CNN
+F 2 "" H 2800 3225 50  0001 C CNN
+F 3 "" H 2900 3325 50  0001 C CNN
+	1    2750 3175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4275 4675 4275 4350
+Wire Wire Line
+	4275 3775 4275 4050
+$Comp
+L NPOT SWING1
+U 1 1 5AC1C6AC
+P 7425 3375
+F 0 "SWING1" V 7275 3375 50  0000 C CNN
+F 1 "B1M" V 7350 3375 50  0000 C CNN
+F 2 "" H 7425 3375 50  0001 C CNN
+F 3 "" H 7425 3375 50  0001 C CNN
+	1    7425 3375
+	0    1    1    0   
+$EndComp
+Connection ~ 7675 3600
+$Comp
+L _4046 U_PLL1
+U 1 1 5AC1C6B4
+P 5525 3575
+F 0 "U_PLL1" H 5525 3475 50  0000 C CNN
+F 1 "_4046" H 5525 3675 50  0000 C CNN
+F 2 "" H 5525 3575 60  0001 C CNN
+F 3 "" H 5525 3575 60  0001 C CNN
+	1    5525 3575
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6225 3575 7325 3575
+Wire Wire Line
+	7325 3575 7325 3700
+Wire Wire Line
+	7325 3700 7675 3700
+Wire Wire Line
+	7425 3525 7425 3600
+Wire Wire Line
+	7425 3600 7675 3600
+$Comp
+L NPOT DAMPEN1
+U 1 1 5AC1C6C0
+P 7675 3975
+F 0 "DAMPEN1" H 7425 3950 50  0000 C CNN
+F 1 "B100K" H 7450 4050 50  0000 C CNN
+F 2 "" H 7675 3975 50  0001 C CNN
+F 3 "" H 7675 3975 50  0001 C CNN
+	1    7675 3975
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7450 4200 8400 4200
+Wire Wire Line
+	7450 4200 7450 3975
+Wire Wire Line
+	7450 3975 7525 3975
+Connection ~ 7675 4200
+$Comp
+L C C_SH1
+U 1 1 5AC1C6CB
+P 6625 4075
+F 0 "C_SH1" H 6650 4175 50  0000 L CNN
+F 1 "100nF" H 6650 3975 50  0000 L CNN
+F 2 "" H 6663 3925 50  0001 C CNN
+F 3 "" H 6625 4075 50  0001 C CNN
+	1    6625 4075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6625 3925 6625 3575
+Connection ~ 6625 3575
+Wire Wire Line
+	6625 4225 6625 4650
+$Comp
+L _TL071 U_OAFX_OUT1
+U 1 1 5AC1C6D7
+P 8775 3075
+F 0 "U_OAFX_OUT1" H 8775 3325 50  0000 L CNN
+F 1 "_TL071" H 8775 3225 50  0000 L CNN
+F 2 "" H 8825 3125 50  0001 C CNN
+F 3 "" H 8925 3225 50  0001 C CNN
+	1    8775 3075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8675 2775 8675 2575
+Wire Wire Line
+	8675 3375 8675 3525
+Wire Wire Line
+	8400 3175 8400 3825
+Wire Wire Line
+	9175 3825 9175 3075
+Wire Wire Line
+	9075 3075 9975 3075
+Connection ~ 9175 3075
+NoConn ~ 8775 3375
+NoConn ~ 8875 3375
+Wire Wire Line
+	6225 3175 7850 3175
+Text Notes 3875 2975 0    47   ~ 0
+Smaller value \n= more sustain
+Text Notes 4225 3725 0    47   ~ 0
+smaller value \nimproves tracking
+$Comp
+L NPOT VELOCITY1
+U 1 1 5AC1C6EB
+P 2775 4275
+F 0 "VELOCITY1" V 2600 4275 50  0000 C CNN
+F 1 "B10K" V 2675 4275 50  0000 C CNN
+F 2 "" H 2775 4275 50  0001 C CNN
+F 3 "" H 2775 4275 50  0001 C CNN
+	1    2775 4275
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2775 4425 2775 4550
+Wire Wire Line
+	2775 4550 3075 4550
+Wire Wire Line
+	3075 4550 3075 4275
+Connection ~ 3075 4275
+$Comp
+L NPOT FMOD1
+U 1 1 5AC1C6F6
+P 4275 4200
+F 0 "FMOD1" V 4100 4200 50  0000 C CNN
+F 1 "B50K" V 4175 4200 50  0000 C CNN
+F 2 "" H 4275 4200 50  0001 C CNN
+F 3 "" H 4275 4200 50  0001 C CNN
+	1    4275 4200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4125 4200 4000 4200
+Wire Wire Line
+	4000 4200 4000 3975
+Connection ~ 4275 3975
+$Comp
+L SW_SPST RELEASE1
+U 1 1 5AC1C700
+P 8400 4925
+F 0 "RELEASE1" H 8400 5050 50  0000 C CNN
+F 1 "SW_SPST" H 8400 4825 50  0000 C CNN
+F 2 "" H 8400 4925 50  0001 C CNN
+F 3 "" H 8400 4925 50  0001 C CNN
+	1    8400 4925
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C_LPF2
+U 1 1 5AC1C707
+P 8400 4500
+F 0 "C_LPF2" H 8525 4550 50  0000 L CNN
+F 1 "470nF" H 8525 4450 50  0000 L CNN
+F 2 "" H 8438 4350 50  0001 C CNN
+F 3 "" H 8400 4500 50  0001 C CNN
+	1    8400 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 4650 8400 4725
+Wire Wire Line
+	8400 4200 8400 4350
+Wire Wire Line
+	8400 5125 8400 5300
+Wire Wire Line
+	4825 3775 4275 3775
+Wire Wire Line
+	1775 3075 2450 3075
+Wire Wire Line
+	8475 2975 8050 2975
+$Comp
+L R R_OA_OUT1
+U 1 1 5AC1C718
+P 8000 3175
+F 0 "R_OA_OUT1" V 8080 3175 50  0000 C CNN
+F 1 "2K7" V 8000 3175 50  0000 C CNN
+F 2 "" V 7930 3175 50  0001 C CNN
+F 3 "" H 8000 3175 50  0001 C CNN
+	1    8000 3175
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8150 3175 8475 3175
+Connection ~ 8400 3175
+$Comp
+L R R_OA_OUT_F1
+U 1 1 5AC1C721
+P 8825 3825
+F 0 "R_OA_OUT_F1" V 8905 3825 50  0000 C CNN
+F 1 "180R" V 8825 3825 50  0000 C CNN
+F 2 "" V 8755 3825 50  0001 C CNN
+F 3 "" H 8825 3825 50  0001 C CNN
+	1    8825 3825
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8400 3825 8675 3825
+Wire Wire Line
+	8975 3825 9175 3825
+Text HLabel 1775 3075 0    60   Input ~ 0
+SIG_IN
+Text HLabel 9975 3075 2    60   Input ~ 0
+SIG_OUT
+Text HLabel 2650 2750 1    60   Input ~ 0
+9V
+Text HLabel 2650 3625 3    60   Input ~ 0
+-9V
+Text HLabel 2350 4825 3    60   Input ~ 0
+GND
+Text HLabel 4275 4675 3    60   Input ~ 0
+GND
+Text HLabel 4725 4475 3    60   Input ~ 0
+GND
+Text HLabel 5525 4450 3    60   Input ~ 0
+GND
+Text HLabel 6625 4650 3    60   Input ~ 0
+GND
+Text HLabel 7675 5300 3    60   Input ~ 0
+GND
+Text HLabel 8400 5300 3    60   Input ~ 0
+GND
+Text HLabel 8675 3525 3    60   Input ~ 0
+-9V
+Text HLabel 5525 2775 1    60   Input ~ 0
+9V
+Text HLabel 8675 2575 1    60   Input ~ 0
+9V
+Text HLabel 8050 2975 0    60   Input ~ 0
+GND
+$EndSCHEMATC
