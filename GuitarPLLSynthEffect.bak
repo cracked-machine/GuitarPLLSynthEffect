@@ -55,14 +55,14 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L JACK__MONO_2P_NC J_IN1
+L JACK__MONO_2P_NC J_CLEAN_IN1
 U 1 1 5ABD53A6
-P 1150 1325
-F 0 "J_IN1" H 800 1125 50  0000 C CNN
-F 1 "JACK__MONO_2P_NC" H 1000 1675 50  0000 C CNN
-F 2 "" H 1150 1325 50  0001 C CNN
-F 3 "" H 1150 1325 50  0001 C CNN
-	1    1150 1325
+P 1325 2200
+F 0 "J_CLEAN_IN1" H 1125 2000 50  0000 C CNN
+F 1 "JACK__MONO_2P_NC" H 1175 2550 50  0000 C CNN
+F 2 "" H 1325 2200 50  0001 C CNN
+F 3 "" H 1325 2200 50  0001 C CNN
+	1    1325 2200
 	1    0    0    1   
 $EndComp
 $Comp
@@ -76,10 +76,6 @@ F 3 "" H 10475 2625 50  0001 C CNN
 	1    10475 2625
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	1600 1525 1650 1525
-Wire Wire Line
-	1650 1525 1650 1775
 $Comp
 L _Barrel_Jack J_POWER1
 U 1 1 5ABD58A2
@@ -91,42 +87,27 @@ F 3 "" H 1700 5735 50  0001 C CNN
 	1    1650 5775
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1950 5875 2100 5875
-Wire Wire Line
-	2100 5875 2100 6025
 Text Label 2100 6025 3    60   ~ 0
 GND
-Wire Wire Line
-	1950 5675 4775 5675
 Text Label 2925 5675 0    60   ~ 0
 9V
-Text Label 1650 1775 3    60   ~ 0
+Text Label 1825 2650 1    60   ~ 0
 GND
-NoConn ~ 1600 1325
-NoConn ~ 1600 1425
+NoConn ~ 1775 2300
 NoConn ~ 1950 5775
 NoConn ~ 10025 2625
 NoConn ~ 10025 2725
 $Comp
-L CP C_IN1
+L CP C_CLEAN_IN1
 U 1 1 5ABD5AE5
-P 1850 1225
-F 0 "C_IN1" H 1875 1325 50  0000 L CNN
-F 1 "4.7uF" H 1875 1125 50  0000 L CNN
-F 2 "" H 1888 1075 50  0001 C CNN
-F 3 "" H 1850 1225 50  0001 C CNN
-	1    1850 1225
+P 2125 2100
+F 0 "C_CLEAN_IN1" V 1975 1675 50  0000 L CNN
+F 1 "4.7uF" V 1875 1950 50  0000 L CNN
+F 2 "" H 2163 1950 50  0001 C CNN
+F 3 "" H 2125 2100 50  0001 C CNN
+	1    2125 2100
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	1600 1225 1700 1225
-Wire Wire Line
-	9625 2525 10025 2525
-Wire Wire Line
-	10025 2825 9850 2825
-Wire Wire Line
-	9850 2825 9850 3300
 Text Label 9850 3300 3    60   ~ 0
 GND
 $Comp
@@ -140,9 +121,6 @@ F 3 "" H 2200 5625 50  0001 C CNN
 	1    2200 5625
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2200 5625 2200 5675
-Connection ~ 2200 5675
 $Comp
 L _TC7662B U_NEG1
 U 1 1 5ABEBF1E
@@ -154,15 +132,6 @@ F 3 "" H 4150 6100 60  0001 C CNN
 	1    4150 6100
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	3500 5675 3500 5875
-Wire Wire Line
-	3500 5875 3650 5875
-Wire Wire Line
-	4775 5675 4775 5875
-Wire Wire Line
-	4775 5875 4650 5875
-Connection ~ 3500 5675
 $Comp
 L CP C_NEG1
 U 1 1 5ABEE2CF
@@ -174,22 +143,10 @@ F 3 "" H 5100 6025 50  0001 C CNN
 	1    5100 6025
 	0    -1   1    0   
 $EndComp
-Wire Wire Line
-	4650 6025 4950 6025
-Wire Wire Line
-	5250 6025 5300 6025
-Wire Wire Line
-	5300 6025 5300 6325
-Wire Wire Line
-	5300 6325 4650 6325
-Wire Wire Line
-	4825 6175 4650 6175
 Text Label 4825 6175 2    60   ~ 0
 GND
 NoConn ~ 3650 6025
 NoConn ~ 3650 6175
-Wire Wire Line
-	3025 6325 3650 6325
 Text Label 3025 6325 2    60   ~ 0
 -9V
 $Comp
@@ -203,11 +160,6 @@ F 3 "" H 3525 6550 50  0001 C CNN
 	1    3525 6550
 	1    0    0    1   
 $EndComp
-Wire Wire Line
-	3525 6400 3525 6325
-Connection ~ 3525 6325
-Wire Wire Line
-	3525 6700 3525 6900
 Text Label 3525 6900 1    60   ~ 0
 GND
 $Comp
@@ -224,43 +176,20 @@ $EndComp
 $Comp
 L _TL071 U_OACLEAN_IN1
 U 1 1 5AC05487
-P 3225 1325
-F 0 "U_OACLEAN_IN1" H 3225 1575 50  0000 L CNN
-F 1 "_TL071" H 3225 1475 50  0000 L CNN
-F 2 "" H 3275 1375 50  0001 C CNN
-F 3 "" H 3375 1475 50  0001 C CNN
-	1    3225 1325
+P 4775 1325
+F 0 "U_OACLEAN_IN1" H 4775 1575 50  0000 L CNN
+F 1 "_TL071" H 4775 1475 50  0000 L CNN
+F 2 "" H 4825 1375 50  0001 C CNN
+F 3 "" H 4925 1475 50  0001 C CNN
+	1    4775 1325
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2000 1225 2925 1225
-Connection ~ 2100 1225
-Wire Wire Line
-	3125 1025 3125 900 
-Wire Wire Line
-	3125 1625 3125 1800
-Text Label 3125 1800 1    60   ~ 0
+Text Label 4675 1800 1    60   ~ 0
 -9V
-Text Label 3125 900  3    60   ~ 0
+Text Label 4675 900  3    60   ~ 0
 9V
-NoConn ~ 3225 1625
-NoConn ~ 3325 1625
-Wire Wire Line
-	2925 1425 2825 1425
-Wire Wire Line
-	3625 1925 3625 1325
-Wire Wire Line
-	3525 1325 7950 1325
-Wire Wire Line
-	8950 2075 8950 2275
-Wire Wire Line
-	8950 1475 8950 1325
-Wire Wire Line
-	8650 1875 8750 1875
-Wire Wire Line
-	8650 1875 8650 2550
-Wire Wire Line
-	8650 2425 8900 2425
+NoConn ~ 4775 1625
+NoConn ~ 4875 1625
 $Comp
 L R R_MIX_F1
 U 1 1 5AC0CCCD
@@ -272,20 +201,10 @@ F 3 "" H 9050 2425 50  0001 C CNN
 	1    9050 2425
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	9200 2425 9450 2425
-Wire Wire Line
-	9450 2425 9450 1775
-Wire Wire Line
-	9350 1775 9625 1775
 Text Label 8950 2275 1    60   ~ 0
 -9V
 Text Label 8950 1325 3    60   ~ 0
 9V
-Wire Wire Line
-	9625 1775 9625 2525
-Connection ~ 9450 1775
-Connection ~ 3625 1325
 $Sheet
 S 4450 3275 1800 1450
 U 5AC1BF72
@@ -297,18 +216,6 @@ F4 "9V" I L 4450 4175 60
 F5 "-9V" I L 4450 4325 60 
 F6 "GND" I L 4450 4475 60 
 $EndSheet
-Wire Wire Line
-	4450 3850 2100 3850
-Wire Wire Line
-	2100 3850 2100 1225
-Wire Wire Line
-	7950 3950 7950 1825
-Wire Wire Line
-	4450 4175 4100 4175
-Wire Wire Line
-	4450 4325 4100 4325
-Wire Wire Line
-	4450 4475 4100 4475
 Text Label 4100 4175 0    60   ~ 0
 9V
 Text Label 4100 4325 0    60   ~ 0
@@ -317,10 +224,6 @@ Text Label 4100 4475 0    60   ~ 0
 GND
 NoConn ~ 9050 2075
 NoConn ~ 9150 2075
-Wire Wire Line
-	3625 1925 2825 1925
-Wire Wire Line
-	2825 1925 2825 1425
 $Comp
 L NPOT MIX1
 U 1 1 5AC12327
@@ -332,10 +235,6 @@ F 3 "" H 7950 1675 50  0001 C CNN
 	1    7950 1675
 	1    0    0    1   
 $EndComp
-Wire Wire Line
-	7950 1325 7950 1525
-Wire Wire Line
-	8100 1675 8750 1675
 $Comp
 L R R_MIX_G1
 U 1 1 5AC11ECA
@@ -347,9 +246,6 @@ F 3 "" H 8650 2700 50  0001 C CNN
 	1    8650 2700
 	-1   0    0    1   
 $EndComp
-Connection ~ 8650 2425
-Wire Wire Line
-	8650 2850 8650 3100
 Text Label 8650 3100 1    60   ~ 0
 GND
 $Comp
@@ -363,8 +259,6 @@ F 3 "" H 7175 4100 50  0001 C CNN
 	1    7025 3950
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6250 3850 6725 3850
 $Comp
 L NPOT FXVOL1
 U 1 1 5AC14DA8
@@ -376,18 +270,192 @@ F 3 "" H 7250 4650 50  0001 C CNN
 	1    7250 4650
 	0    -1   1    0   
 $EndComp
+$Comp
+L R R_FXVOL1
+U 1 1 5AC151DA
+P 6600 4900
+F 0 "R_FXVOL1" V 6680 4900 50  0000 C CNN
+F 1 "560R" V 6600 4900 50  0000 C CNN
+F 2 "" V 6530 4900 50  0001 C CNN
+F 3 "" H 6600 4900 50  0001 C CNN
+	1    6600 4900
+	1    0    0    -1  
+$EndComp
+Text Label 6600 5250 1    60   ~ 0
+GND
+Text Label 6925 4475 1    60   ~ 0
+-9V
+Text Label 6925 3500 3    60   ~ 0
+9V
+NoConn ~ 7025 4250
+NoConn ~ 7125 4250
+Text Notes 6875 5125 0    60   ~ 0
+GAIN = 1.0-2.79
+$Comp
+L JACK__MONO_2P_NC J_DIRTY_IN1
+U 1 1 5AC21404
+P 1325 1325
+F 0 "J_DIRTY_IN1" H 1100 1125 50  0000 C CNN
+F 1 "JACK__MONO_2P_NC" H 1175 1675 50  0000 C CNN
+F 2 "" H 1325 1325 50  0001 C CNN
+F 3 "" H 1325 1325 50  0001 C CNN
+	1    1325 1325
+	1    0    0    1   
+$EndComp
+$Comp
+L SW_SPDT SW_MIXSELECT1
+U 1 1 5AC214FD
+P 3100 2000
+F 0 "SW_MIXSELECT1" H 3100 2250 50  0000 C CNN
+F 1 "SW_SPDT" H 3100 1800 50  0000 C CNN
+F 2 "" H 3100 2000 50  0001 C CNN
+F 3 "" H 3100 2000 50  0001 C CNN
+	1    3100 2000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CP C_DIRTY_IN1
+U 1 1 5AC23674
+P 2125 1225
+F 0 "C_DIRTY_IN1" V 2400 850 50  0000 L CNN
+F 1 "4.7uF" V 2300 1100 50  0000 L CNN
+F 2 "" H 2163 1075 50  0001 C CNN
+F 3 "" H 2125 1225 50  0001 C CNN
+	1    2125 1225
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1775 2400 1825 2400
+Wire Wire Line
+	1825 2200 1825 2400
+Wire Wire Line
+	1825 2400 1825 2650
+Wire Wire Line
+	1950 5875 2100 5875
+Wire Wire Line
+	2100 5875 2100 6025
+Wire Wire Line
+	1950 5675 2200 5675
+Wire Wire Line
+	2200 5675 3500 5675
+Wire Wire Line
+	3500 5675 4775 5675
+Wire Wire Line
+	1775 2100 1975 2100
+Wire Wire Line
+	9625 2525 10025 2525
+Wire Wire Line
+	10025 2825 9850 2825
+Wire Wire Line
+	9850 2825 9850 3300
+Wire Wire Line
+	2200 5625 2200 5675
+Connection ~ 2200 5675
+Wire Wire Line
+	3500 5675 3500 5875
+Wire Wire Line
+	3500 5875 3650 5875
+Wire Wire Line
+	4775 5675 4775 5875
+Wire Wire Line
+	4775 5875 4650 5875
+Connection ~ 3500 5675
+Wire Wire Line
+	4650 6025 4950 6025
+Wire Wire Line
+	5250 6025 5300 6025
+Wire Wire Line
+	5300 6025 5300 6325
+Wire Wire Line
+	5300 6325 4650 6325
+Wire Wire Line
+	4825 6175 4650 6175
+Wire Wire Line
+	3025 6325 3525 6325
+Wire Wire Line
+	3525 6325 3650 6325
+Wire Wire Line
+	3525 6400 3525 6325
+Connection ~ 3525 6325
+Wire Wire Line
+	3525 6700 3525 6900
+Wire Wire Line
+	4675 1025 4675 900 
+Wire Wire Line
+	4675 1625 4675 1800
+Wire Wire Line
+	4475 1425 4375 1425
+Wire Wire Line
+	5175 1925 5175 1325
+Wire Wire Line
+	5075 1325 5175 1325
+Wire Wire Line
+	5175 1325 7950 1325
+Wire Wire Line
+	8950 2075 8950 2275
+Wire Wire Line
+	8950 1475 8950 1325
+Wire Wire Line
+	8650 1875 8750 1875
+Wire Wire Line
+	8650 1875 8650 2425
+Wire Wire Line
+	8650 2425 8650 2550
+Wire Wire Line
+	8650 2425 8900 2425
+Wire Wire Line
+	9200 2425 9450 2425
+Wire Wire Line
+	9450 2425 9450 1775
+Wire Wire Line
+	9350 1775 9450 1775
+Wire Wire Line
+	9450 1775 9625 1775
+Wire Wire Line
+	9625 1775 9625 2525
+Connection ~ 9450 1775
+Connection ~ 5175 1325
+Wire Wire Line
+	3625 3850 4450 3850
+Wire Wire Line
+	7950 3950 7950 1825
+Wire Wire Line
+	4450 4175 4100 4175
+Wire Wire Line
+	4450 4325 4100 4325
+Wire Wire Line
+	4450 4475 4100 4475
+Wire Wire Line
+	5175 1925 4375 1925
+Wire Wire Line
+	4375 1925 4375 1425
+Wire Wire Line
+	7950 1325 7950 1525
+Wire Wire Line
+	8100 1675 8750 1675
+Connection ~ 8650 2425
+Wire Wire Line
+	8650 2850 8650 3100
+Wire Wire Line
+	6250 3850 6725 3850
 Wire Wire Line
 	6725 4050 6600 4050
 Wire Wire Line
-	6600 4050 6600 4750
+	6600 4050 6600 4650
 Wire Wire Line
-	6600 4650 7100 4650
+	6600 4650 6600 4750
+Wire Wire Line
+	6600 4650 7000 4650
+Wire Wire Line
+	7000 4650 7100 4650
 Wire Wire Line
 	7400 4650 7500 4650
 Wire Wire Line
 	7500 4650 7500 3950
 Wire Wire Line
-	7325 3950 7950 3950
+	7325 3950 7500 3950
+Wire Wire Line
+	7500 3950 7950 3950
 Connection ~ 7500 3950
 Wire Wire Line
 	7000 4650 7000 4900
@@ -401,27 +469,38 @@ Wire Wire Line
 Wire Wire Line
 	6925 4250 6925 4475
 Connection ~ 6600 4650
-$Comp
-L R R_FXVOL1
-U 1 1 5AC151DA
-P 6600 4900
-F 0 "R_FXVOL1" V 6680 4900 50  0000 C CNN
-F 1 "560R" V 6600 4900 50  0000 C CNN
-F 2 "" V 6530 4900 50  0001 C CNN
-F 3 "" H 6600 4900 50  0001 C CNN
-	1    6600 4900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6600 5050 6600 5250
-Text Label 6600 5250 1    60   ~ 0
+Wire Wire Line
+	2900 2100 2275 2100
+Wire Wire Line
+	1775 1225 1975 1225
+Wire Wire Line
+	2275 1225 2675 1225
+Wire Wire Line
+	2675 1225 4475 1225
+Wire Wire Line
+	2675 1225 2675 1900
+Wire Wire Line
+	2675 1900 2900 1900
+Connection ~ 2675 1225
+Wire Wire Line
+	3300 2000 3625 2000
+Wire Wire Line
+	3625 2000 3625 3850
+Wire Wire Line
+	1775 1525 1850 1525
+Wire Wire Line
+	1850 1325 1850 1525
+Wire Wire Line
+	1850 1525 1850 1825
+Text Label 1850 1825 1    60   ~ 0
 GND
-Text Label 6925 4475 1    60   ~ 0
--9V
-Text Label 6925 3500 3    60   ~ 0
-9V
-NoConn ~ 7025 4250
-NoConn ~ 7125 4250
-Text Notes 6875 5125 0    60   ~ 0
-GAIN = 1.0-2.79
+NoConn ~ 1775 1425
+Wire Wire Line
+	1775 1325 1850 1325
+Connection ~ 1850 1525
+Wire Wire Line
+	1775 2200 1825 2200
+Connection ~ 1825 2400
 $EndSCHEMATC
