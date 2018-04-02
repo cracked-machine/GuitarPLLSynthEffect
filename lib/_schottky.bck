@@ -1,0 +1,13 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP D_Schottky
+D Schottky diode
+K diode Schottky
+$ENDCMP
+#
+$CMP _Schottky
+D Schottky diode
+K diode Schottky
+$ENDCMP
+#
+#End Doc Library

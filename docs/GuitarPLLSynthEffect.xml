@@ -1,0 +1,1178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>H:\Workspace\ElectronicsProjects\EffectsPedals\Synth\GuitarPLLSynthEffect\GuitarPLLSynthEffect.sch</source>
+    <date>02-04-2018 10:05:56 PM</date>
+    <tool>Eeschema 4.0.7</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>PLL Synth Effects Pedal</title>
+        <company/>
+        <rev>A</rev>
+        <date>2018-04-02</date>
+        <source>GuitarPLLSynthEffect.sch</source>
+        <comment number="1" value="FX Vol and Blend controls"/>
+        <comment number="2" value="Optional clean signal input for better tracking"/>
+        <comment number="3" value="Selectable square and Sawtooth voices"/>
+        <comment number="4" value="PLL Synth effect with variable controls"/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/Sheet5AC1BF71/" tstamps="/5AC1BF72/">
+      <title_block>
+        <title>PLL Synth Effects Pedal</title>
+        <company/>
+        <rev>A</rev>
+        <date>2018-04-02</date>
+        <source>file5AC1BF71.sch</source>
+        <comment number="1" value="FX Vol and Blend controls"/>
+        <comment number="2" value="Optional clean signal input for better tracking"/>
+        <comment number="3" value="Selectable square and Sawtooth voices"/>
+        <comment number="4" value="PLL Synth effect with variable controls"/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="J_CLEAN_IN1">
+      <value>JACK__MONO_2P_NC</value>
+      <footprint>custom_sockets:JackSocket_Mono_PCB</footprint>
+      <libsource lib="socket_custom" part="JACK__MONO_2P_NC"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ABD53A6</tstamp>
+    </comp>
+    <comp ref="J_OU1">
+      <value>JACK__MONO_2P_NC</value>
+      <footprint>custom_sockets:JackSocket_Mono_PCB</footprint>
+      <libsource lib="socket_custom" part="JACK__MONO_2P_NC"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ABD53E5</tstamp>
+    </comp>
+    <comp ref="J_POWER1">
+      <value>_Barrel_Jack</value>
+      <footprint>custom_sockets:BARREL_JACK</footprint>
+      <libsource lib="barrel_jack" part="_Barrel_Jack"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ABD58A2</tstamp>
+    </comp>
+    <comp ref="C_CLEAN_IN1">
+      <value>4.7uF</value>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
+      <libsource lib="device" part="CP"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ABD5AE5</tstamp>
+    </comp>
+    <comp ref="U_NEG1">
+      <value>_TC7662B</value>
+      <footprint>SMD_Packages:SOIC-8-N</footprint>
+      <libsource lib="_TC7662b" part="_TC7662B"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ABEBF1E</tstamp>
+    </comp>
+    <comp ref="C2_NEG1">
+      <value>10uF</value>
+      <footprint>Capacitors_SMD:CP_Elec_4x5.3</footprint>
+      <libsource lib="device" part="CP"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ABEE2CF</tstamp>
+    </comp>
+    <comp ref="C1_NEG1">
+      <value>10uF</value>
+      <footprint>Capacitors_SMD:CP_Elec_4x5.3</footprint>
+      <libsource lib="device" part="CP"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ABEF036</tstamp>
+    </comp>
+    <comp ref="U_OA_MIX1">
+      <value>_TL071</value>
+      <footprint>SMD_Packages:SOIC-8-N</footprint>
+      <libsource lib="_TL071" part="_TL071"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AC053DF</tstamp>
+    </comp>
+    <comp ref="U_OACLEAN_IN1">
+      <value>_TL071</value>
+      <footprint>SMD_Packages:SOIC-8-N</footprint>
+      <libsource lib="_TL071" part="_TL071"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AC05487</tstamp>
+    </comp>
+    <comp ref="R_MIX_F1">
+      <value>10K</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AC0CCCD</tstamp>
+    </comp>
+    <comp ref="MIX1">
+      <value>B100K</value>
+      <footprint>Potentiometers:Potentiometer_Bourns_PTV09A-1_Horizontal</footprint>
+      <libsource lib="pot_numbered" part="NPOT"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AC12327</tstamp>
+    </comp>
+    <comp ref="R_MIX_G1">
+      <value>10K</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AC11ECA</tstamp>
+    </comp>
+    <comp ref="U_OA_FXVOL1">
+      <value>_TL071</value>
+      <footprint>SMD_Packages:SOIC-8-N</footprint>
+      <libsource lib="_TL071" part="_TL071"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AC1482A</tstamp>
+    </comp>
+    <comp ref="FXVOL1">
+      <value>B1K</value>
+      <footprint>Potentiometers:Potentiometer_Bourns_PTV09A-1_Horizontal</footprint>
+      <libsource lib="pot_numbered" part="NPOT"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AC14DA8</tstamp>
+    </comp>
+    <comp ref="R_FXVOL1">
+      <value>560R</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AC151DA</tstamp>
+    </comp>
+    <comp ref="J_DIRTY_IN1">
+      <value>JACK__MONO_2P_NC</value>
+      <footprint>custom_sockets:JackSocket_Mono_PCB</footprint>
+      <libsource lib="socket_custom" part="JACK__MONO_2P_NC"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AC21404</tstamp>
+    </comp>
+    <comp ref="SW_INSW1">
+      <value>SW_SPDT</value>
+      <footprint>custom_sw:SW_SPDT_W6.86MM_L12.7MM_P4.8MM_D2MM</footprint>
+      <libsource lib="switches" part="SW_SPDT"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AC214FD</tstamp>
+    </comp>
+    <comp ref="C_DIRTY_IN1">
+      <value>4.7uF</value>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
+      <libsource lib="device" part="CP"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AC23674</tstamp>
+    </comp>
+    <comp ref="D_IN1">
+      <value>_Schottky</value>
+      <footprint>Diodes_SMD:D_SOD-123F</footprint>
+      <libsource lib="_schottky" part="_Schottky"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AC34A74</tstamp>
+    </comp>
+    <comp ref="C_RIP1">
+      <value>100nF</value>
+      <footprint>Capacitors_SMD:CP_Elec_4x5.3</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AC36CD5</tstamp>
+    </comp>
+    <comp ref="SW_BYPASS1">
+      <value>SW_3PDT_on_on</value>
+      <footprint>custom_sw:SW_3PDT_W18MM_L17.3MM_P5.3MM_D2MM_PCBPin</footprint>
+      <libsource lib="sw_custom" part="SW_3PDT_on_on"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AC3ABF6</tstamp>
+    </comp>
+    <comp ref="D_ON1">
+      <value>LED</value>
+      <footprint>LEDs:LED_D5.0mm</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AC4460F</tstamp>
+    </comp>
+    <comp ref="J_AUX2MAIN_INSW1">
+      <value>Conn_01x04</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm</footprint>
+      <libsource lib="conn" part="Conn_01x04"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AC615DD</tstamp>
+    </comp>
+    <comp ref="J_MAIN2AUX_INSW1">
+      <value>Conn_01x04</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm</footprint>
+      <libsource lib="conn" part="Conn_01x04"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AC6169F</tstamp>
+    </comp>
+    <comp ref="J_AUX2MAIN_VOL1">
+      <value>Conn_01x06</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x06_Pitch2.54mm</footprint>
+      <libsource lib="conn" part="Conn_01x06"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AC61AAD</tstamp>
+    </comp>
+    <comp ref="J_MAIN2AUX_VOL1">
+      <value>Conn_01x06</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x06_Pitch2.54mm</footprint>
+      <libsource lib="conn" part="Conn_01x06"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AC61E10</tstamp>
+    </comp>
+    <comp ref="R_OA_IN1">
+      <value>2K7</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/Sheet5AC1BF71/" tstamps="/5AC1BF72/"/>
+      <tstamp>5AC1C65B</tstamp>
+    </comp>
+    <comp ref="C_SUSTAIN1">
+      <value>47nF</value>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
+      <libsource lib="device" part="CP"/>
+      <sheetpath names="/Sheet5AC1BF71/" tstamps="/5AC1BF72/"/>
+      <tstamp>5AC1C66E</tstamp>
+    </comp>
+    <comp ref="C_VCO1">
+      <value>22nF</value>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/Sheet5AC1BF71/" tstamps="/5AC1BF72/"/>
+      <tstamp>5AC1C676</tstamp>
+    </comp>
+    <comp ref="C_LPF1">
+      <value>470nF</value>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/Sheet5AC1BF71/" tstamps="/5AC1BF72/"/>
+      <tstamp>5AC1C694</tstamp>
+    </comp>
+    <comp ref="U_OAFX_IN1">
+      <value>_TL071</value>
+      <footprint>SMD_Packages:SOIC-8-N</footprint>
+      <libsource lib="_TL071" part="_TL071"/>
+      <sheetpath names="/Sheet5AC1BF71/" tstamps="/5AC1BF72/"/>
+      <tstamp>5AC1C6A3</tstamp>
+    </comp>
+    <comp ref="SWING1">
+      <value>B1M</value>
+      <footprint>Potentiometers:Potentiometer_Bourns_PTV09A-1_Horizontal</footprint>
+      <libsource lib="pot_numbered" part="NPOT"/>
+      <sheetpath names="/Sheet5AC1BF71/" tstamps="/5AC1BF72/"/>
+      <tstamp>5AC1C6AC</tstamp>
+    </comp>
+    <comp ref="U_PLL1">
+      <value>_4046</value>
+      <footprint>SMD_Packages:SO-16-N</footprint>
+      <libsource lib="_4046" part="_4046"/>
+      <sheetpath names="/Sheet5AC1BF71/" tstamps="/5AC1BF72/"/>
+      <tstamp>5AC1C6B4</tstamp>
+    </comp>
+    <comp ref="DAMPEN1">
+      <value>B100K</value>
+      <footprint>Potentiometers:Potentiometer_Bourns_PTV09A-1_Horizontal</footprint>
+      <libsource lib="pot_numbered" part="NPOT"/>
+      <sheetpath names="/Sheet5AC1BF71/" tstamps="/5AC1BF72/"/>
+      <tstamp>5AC1C6C0</tstamp>
+    </comp>
+    <comp ref="C_SH1">
+      <value>100nF</value>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/Sheet5AC1BF71/" tstamps="/5AC1BF72/"/>
+      <tstamp>5AC1C6CB</tstamp>
+    </comp>
+    <comp ref="U_OAFX_OUT1">
+      <value>_TL071</value>
+      <footprint>SMD_Packages:SOIC-8-N</footprint>
+      <libsource lib="_TL071" part="_TL071"/>
+      <sheetpath names="/Sheet5AC1BF71/" tstamps="/5AC1BF72/"/>
+      <tstamp>5AC1C6D7</tstamp>
+    </comp>
+    <comp ref="TRIG1">
+      <value>B10K</value>
+      <footprint>Potentiometers:Potentiometer_Bourns_PTV09A-1_Horizontal</footprint>
+      <libsource lib="pot_numbered" part="NPOT"/>
+      <sheetpath names="/Sheet5AC1BF71/" tstamps="/5AC1BF72/"/>
+      <tstamp>5AC1C6EB</tstamp>
+    </comp>
+    <comp ref="FMOD1">
+      <value>B50K</value>
+      <footprint>Potentiometers:Potentiometer_Bourns_PTV09A-1_Horizontal</footprint>
+      <libsource lib="pot_numbered" part="NPOT"/>
+      <sheetpath names="/Sheet5AC1BF71/" tstamps="/5AC1BF72/"/>
+      <tstamp>5AC1C6F6</tstamp>
+    </comp>
+    <comp ref="R_OA_OUT1">
+      <value>2K7</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/Sheet5AC1BF71/" tstamps="/5AC1BF72/"/>
+      <tstamp>5AC1C718</tstamp>
+    </comp>
+    <comp ref="R_OA_OUT_F1">
+      <value>15R</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/Sheet5AC1BF71/" tstamps="/5AC1BF72/"/>
+      <tstamp>5AC1C721</tstamp>
+    </comp>
+    <comp ref="SW_WAVE1">
+      <value>SW_SPDT</value>
+      <footprint>custom_sw:SW_SPDT_W6.86MM_L12.7MM_P4.8MM_D2MM</footprint>
+      <libsource lib="switches" part="SW_SPDT"/>
+      <sheetpath names="/Sheet5AC1BF71/" tstamps="/5AC1BF72/"/>
+      <tstamp>5AC188AA</tstamp>
+    </comp>
+    <comp ref="C_SAW1">
+      <value>10nF</value>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/Sheet5AC1BF71/" tstamps="/5AC1BF72/"/>
+      <tstamp>5AC1A22E</tstamp>
+    </comp>
+    <comp ref="R_SAW2">
+      <value>1K</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/Sheet5AC1BF71/" tstamps="/5AC1BF72/"/>
+      <tstamp>5AC26FA5</tstamp>
+    </comp>
+    <comp ref="R_SAW1">
+      <value>2K7</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/Sheet5AC1BF71/" tstamps="/5AC1BF72/"/>
+      <tstamp>5AC270D7</tstamp>
+    </comp>
+    <comp ref="U_NEG2">
+      <value>_TC7662B</value>
+      <footprint>SMD_Packages:SOIC-8-N</footprint>
+      <libsource lib="_TC7662b" part="_TC7662B"/>
+      <sheetpath names="/Sheet5AC1BF71/" tstamps="/5AC1BF72/"/>
+      <tstamp>5AC2BE2F</tstamp>
+    </comp>
+    <comp ref="C2_NEG2">
+      <value>10uF</value>
+      <footprint>Capacitors_SMD:CP_Elec_4x5.3</footprint>
+      <libsource lib="device" part="CP"/>
+      <sheetpath names="/Sheet5AC1BF71/" tstamps="/5AC1BF72/"/>
+      <tstamp>5AC2BE36</tstamp>
+    </comp>
+    <comp ref="C1_NEG2">
+      <value>10uF</value>
+      <footprint>Capacitors_SMD:CP_Elec_4x5.3</footprint>
+      <libsource lib="device" part="CP"/>
+      <sheetpath names="/Sheet5AC1BF71/" tstamps="/5AC1BF72/"/>
+      <tstamp>5AC2BE41</tstamp>
+    </comp>
+    <comp ref="U_SAW_OA1">
+      <value>_TL072</value>
+      <footprint>SMD_Packages:SOIC-8-N</footprint>
+      <libsource lib="_TL072" part="_TL072"/>
+      <sheetpath names="/Sheet5AC1BF71/" tstamps="/5AC1BF72/"/>
+      <tstamp>5AC48A64</tstamp>
+    </comp>
+    <comp ref="C_HOLD2">
+      <value>10uF</value>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
+      <libsource lib="device" part="CP"/>
+      <sheetpath names="/Sheet5AC1BF71/" tstamps="/5AC1BF72/"/>
+      <tstamp>5AC51CA2</tstamp>
+    </comp>
+    <comp ref="SW_HOLD1">
+      <value>SW_SPDT</value>
+      <footprint>custom_sw:SW_SPDT_W6.86MM_L12.7MM_P4.8MM_D2MM</footprint>
+      <libsource lib="switches" part="SW_SPDT"/>
+      <sheetpath names="/Sheet5AC1BF71/" tstamps="/5AC1BF72/"/>
+      <tstamp>5AC51DAF</tstamp>
+    </comp>
+    <comp ref="C_HOLD1">
+      <value>2.2uF</value>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
+      <libsource lib="device" part="CP"/>
+      <sheetpath names="/Sheet5AC1BF71/" tstamps="/5AC1BF72/"/>
+      <tstamp>5AC5203C</tstamp>
+    </comp>
+    <comp ref="J_MAIN2AUX_FX1">
+      <value>Conn_01x04</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm</footprint>
+      <libsource lib="conn" part="Conn_01x04"/>
+      <sheetpath names="/Sheet5AC1BF71/" tstamps="/5AC1BF72/"/>
+      <tstamp>5AC8757C</tstamp>
+    </comp>
+    <comp ref="J_MAIN2AUX_PLL1">
+      <value>Conn_01x04</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm</footprint>
+      <libsource lib="conn" part="Conn_01x04"/>
+      <sheetpath names="/Sheet5AC1BF71/" tstamps="/5AC1BF72/"/>
+      <tstamp>5AC8776C</tstamp>
+    </comp>
+    <comp ref="J_MAIN2AUX_FXSW1">
+      <value>Conn_01x06</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x06_Pitch2.54mm</footprint>
+      <libsource lib="conn" part="Conn_01x06"/>
+      <sheetpath names="/Sheet5AC1BF71/" tstamps="/5AC1BF72/"/>
+      <tstamp>5AC880BA</tstamp>
+    </comp>
+    <comp ref="J_AUX2MAIN_FX1">
+      <value>Conn_01x04</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm</footprint>
+      <libsource lib="conn" part="Conn_01x04"/>
+      <sheetpath names="/Sheet5AC1BF71/" tstamps="/5AC1BF72/"/>
+      <tstamp>5AC881F2</tstamp>
+    </comp>
+    <comp ref="J_AUX2MAIN_PLL1">
+      <value>Conn_01x04</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm</footprint>
+      <libsource lib="conn" part="Conn_01x04"/>
+      <sheetpath names="/Sheet5AC1BF71/" tstamps="/5AC1BF72/"/>
+      <tstamp>5AC8858F</tstamp>
+    </comp>
+    <comp ref="J_AUX2MAIN_FXSW1">
+      <value>Conn_01x06</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x06_Pitch2.54mm</footprint>
+      <libsource lib="conn" part="Conn_01x06"/>
+      <sheetpath names="/Sheet5AC1BF71/" tstamps="/5AC1BF72/"/>
+      <tstamp>5AC88632</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="device" part="C">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="CP">
+      <description>Polarised capacitor</description>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CP</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="Conn_01x04">
+      <description>Generic connector, single row, 01x04</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_??x*mm*</fp>
+        <fp>Connector*:*1x??x*mm*</fp>
+        <fp>Pin?Header?Straight?1X*</fp>
+        <fp>Pin?Header?Angled?1X*</fp>
+        <fp>Socket?Strip?Straight?1X*</fp>
+        <fp>Socket?Strip?Angled?1X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x04</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="Conn_01x06">
+      <description>Generic connector, single row, 01x06</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_??x*mm*</fp>
+        <fp>Connector*:*1x??x*mm*</fp>
+        <fp>Pin?Header?Straight?1X*</fp>
+        <fp>Pin?Header?Angled?1X*</fp>
+        <fp>Socket?Strip?Straight?1X*</fp>
+        <fp>Socket?Strip?Angled?1X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x06</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="socket_custom" part="JACK__MONO_2P_NC">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">JACK__MONO_2P_NC</field>
+      </fields>
+      <pins>
+        <pin num="1" name="TIP" type="passive"/>
+        <pin num="2" name="TIP_NC" type="passive"/>
+        <pin num="3" name="SLEEVE_NC" type="passive"/>
+        <pin num="4" name="SLEEVE" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="LED">
+      <description>LED generic</description>
+      <footprints>
+        <fp>LED*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="pot_numbered" part="NPOT">
+      <fields>
+        <field name="Reference">RV</field>
+        <field name="Value">NPOT</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="sw_custom" part="SW_3PDT_on_on">
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_3PDT_on_on</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="B" type="passive"/>
+        <pin num="3" name="C" type="passive"/>
+        <pin num="4" name="A" type="passive"/>
+        <pin num="5" name="B" type="passive"/>
+        <pin num="6" name="C" type="passive"/>
+        <pin num="7" name="A" type="passive"/>
+        <pin num="8" name="B" type="passive"/>
+        <pin num="9" name="C" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="switches" part="SW_SPDT">
+      <description>Switch, single pole double throw</description>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_SPDT</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="B" type="passive"/>
+        <pin num="3" name="C" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="_4046" part="_4046">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">_4046</field>
+      </fields>
+      <pins>
+        <pin num="1" name="PCP" type="output"/>
+        <pin num="2" name="PC1" type="output"/>
+        <pin num="3" name="SigIn" type="input"/>
+        <pin num="4" name="FOUT" type="BiDi"/>
+        <pin num="5" name="Inh" type="input"/>
+        <pin num="6" name="C1" type="input"/>
+        <pin num="7" name="C2" type="input"/>
+        <pin num="8" name="VSS" type="passive"/>
+        <pin num="9" name="VCOin" type="input"/>
+        <pin num="10" name="SFout" type="output"/>
+        <pin num="11" name="R1" type="input"/>
+        <pin num="12" name="R2" type="input"/>
+        <pin num="13" name="PC2" type="3state"/>
+        <pin num="14" name="RefIn" type="input"/>
+        <pin num="15" name="ZOUT" type="output"/>
+        <pin num="16" name="VDD" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="barrel_jack" part="_Barrel_Jack">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">_Barrel_Jack</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="power_in"/>
+        <pin num="3" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="_schottky" part="_Schottky">
+      <description>Schottky diode</description>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*SingleDiode</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">_Schottky</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="power_out"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="_TC7662b" part="_TC7662B">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">_TC7662B</field>
+      </fields>
+      <pins>
+        <pin num="1" name="BOOST" type="power_in"/>
+        <pin num="2" name="CAP+" type="passive"/>
+        <pin num="3" name="GND" type="passive"/>
+        <pin num="4" name="CAP-" type="passive"/>
+        <pin num="5" name="VOUT" type="power_out"/>
+        <pin num="6" name="LV" type="passive"/>
+        <pin num="7" name="OSC" type="passive"/>
+        <pin num="8" name="V+" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="_TL071" part="_TL071">
+      <description>Single Low-Noise JFET-Input Operational Amplifiers, DIP-8/SOIC-8</description>
+      <docs>http://www.ti.com/lit/ds/symlink/tl071.pdf</docs>
+      <footprints>
+        <fp>SOIC*3.9x4.9mm*Pitch1.27mm*</fp>
+        <fp>DIP*W7.62mm*</fp>
+        <fp>TSSOP*3x3mm*Pitch0.65mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">_TL071</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="input"/>
+        <pin num="2" name="-" type="input"/>
+        <pin num="3" name="+" type="input"/>
+        <pin num="4" name="V-" type="passive"/>
+        <pin num="5" name="~" type="input"/>
+        <pin num="6" name="~" type="output"/>
+        <pin num="7" name="V+" type="power_in"/>
+        <pin num="8" name="NC" type="NotConnected"/>
+      </pins>
+    </libpart>
+    <libpart lib="_TL072" part="_TL072">
+      <description>Dual Low-Noise JFET-Input Operational Amplifiers, DIP-8/SOIC-8</description>
+      <docs>http://www.ti.com/lit/ds/symlink/tl071.pdf</docs>
+      <footprints>
+        <fp>SOIC*3.9x4.9mm*Pitch1.27mm*</fp>
+        <fp>DIP*W7.62mm*</fp>
+        <fp>TO*99*</fp>
+        <fp>OnSemi*Micro8*</fp>
+        <fp>TSSOP*3x3mm*Pitch0.65mm*</fp>
+        <fp>TSSOP*4.4x3mm*Pitch0.65mm*</fp>
+        <fp>MSOP*3x3mm*Pitch0.65mm*</fp>
+        <fp>SSOP*3.9x4.9mm*Pitch0.635mm*</fp>
+        <fp>LFCSP*2x2mm*Pitch0.5mm*</fp>
+        <fp>*SIP*</fp>
+        <fp>SOIC*5.3x6.2mm*Pitch1.27mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">_TL072</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="output"/>
+        <pin num="2" name="-" type="input"/>
+        <pin num="3" name="+" type="input"/>
+        <pin num="4" name="V-" type="passive"/>
+        <pin num="5" name="+" type="input"/>
+        <pin num="6" name="-" type="input"/>
+        <pin num="7" name="~" type="output"/>
+        <pin num="8" name="V+" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="device">
+      <uri>H:\Programs\KiCad\share\kicad\library\device.lib</uri>
+    </library>
+    <library logical="conn">
+      <uri>H:\Programs\KiCad\share\kicad\library\conn.lib</uri>
+    </library>
+    <library logical="_4046">
+      <uri>H:\Workspace\ElectronicsProjects\EffectsPedals\Synth\GuitarPLLSynthEffect\lib\_4046.lib</uri>
+    </library>
+    <library logical="barrel_jack">
+      <uri>H:\Workspace\ElectronicsProjects\EffectsPedals\Synth\GuitarPLLSynthEffect\lib\barrel_jack.lib</uri>
+    </library>
+    <library logical="pot_numbered">
+      <uri>H:\Workspace\ElectronicsProjects\EffectsPedals\Synth\GuitarPLLSynthEffect\lib\pot_numbered.lib</uri>
+    </library>
+    <library logical="socket_custom">
+      <uri>H:\Workspace\ElectronicsProjects\EffectsPedals\Synth\GuitarPLLSynthEffect\lib\socket_custom.lib</uri>
+    </library>
+    <library logical="_TL071">
+      <uri>H:\Workspace\ElectronicsProjects\EffectsPedals\Synth\GuitarPLLSynthEffect\lib\_TL071.lib</uri>
+    </library>
+    <library logical="_TC7662b">
+      <uri>H:\Workspace\ElectronicsProjects\EffectsPedals\Synth\GuitarPLLSynthEffect\lib\_TC7662b.lib</uri>
+    </library>
+    <library logical="_schottky">
+      <uri>H:\Workspace\ElectronicsProjects\EffectsPedals\Synth\GuitarPLLSynthEffect\lib\_schottky.lib</uri>
+    </library>
+    <library logical="sw_custom">
+      <uri>H:\Workspace\ElectronicsProjects\EffectsPedals\Synth\GuitarPLLSynthEffect\lib\sw_custom.lib</uri>
+    </library>
+    <library logical="_TL072">
+      <uri>H:\Workspace\ElectronicsProjects\EffectsPedals\Synth\GuitarPLLSynthEffect\lib\_TL072.lib</uri>
+    </library>
+    <library logical="switches">
+      <uri>H:\Programs\KiCad\share\kicad\library\switches.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(SW_BYPASS1-Pad1)">
+      <node ref="SW_BYPASS1" pin="4"/>
+      <node ref="SW_BYPASS1" pin="1"/>
+    </net>
+    <net code="2" name="Net-(C_DIRTY_IN1-Pad1)">
+      <node ref="C_DIRTY_IN1" pin="1"/>
+      <node ref="SW_BYPASS1" pin="3"/>
+    </net>
+    <net code="3" name="Net-(J_DIRTY_IN1-Pad1)">
+      <node ref="SW_BYPASS1" pin="2"/>
+      <node ref="J_DIRTY_IN1" pin="1"/>
+    </net>
+    <net code="4" name="Net-(D_ON1-Pad2)">
+      <node ref="D_ON1" pin="2"/>
+      <node ref="SW_BYPASS1" pin="9"/>
+    </net>
+    <net code="5" name="Net-(SW_BYPASS1-Pad7)">
+      <node ref="SW_BYPASS1" pin="7"/>
+    </net>
+    <net code="6" name="Net-(SW_BYPASS1-Pad5)">
+      <node ref="U_OA_MIX1" pin="3"/>
+      <node ref="SW_BYPASS1" pin="5"/>
+    </net>
+    <net code="7" name="Net-(J_AUX2MAIN_INSW1-Pad4)">
+      <node ref="J_AUX2MAIN_INSW1" pin="4"/>
+    </net>
+    <net code="8" name="Net-(J_AUX2MAIN_INSW1-Pad3)">
+      <node ref="SW_INSW1" pin="3"/>
+      <node ref="J_AUX2MAIN_INSW1" pin="3"/>
+    </net>
+    <net code="9" name="Net-(J_AUX2MAIN_INSW1-Pad2)">
+      <node ref="J_AUX2MAIN_INSW1" pin="2"/>
+      <node ref="SW_INSW1" pin="2"/>
+    </net>
+    <net code="10" name="/GND">
+      <node ref="U_NEG1" pin="3"/>
+      <node ref="J_CLEAN_IN1" pin="2"/>
+      <node ref="C_SH1" pin="2"/>
+      <node ref="U_OAFX_OUT1" pin="3"/>
+      <node ref="C_LPF1" pin="2"/>
+      <node ref="R_OA_IN1" pin="1"/>
+      <node ref="U_PLL1" pin="8"/>
+      <node ref="R_MIX_G1" pin="1"/>
+      <node ref="R_FXVOL1" pin="2"/>
+      <node ref="J_OU1" pin="4"/>
+      <node ref="J_POWER1" pin="1"/>
+      <node ref="C1_NEG1" pin="1"/>
+      <node ref="J_DIRTY_IN1" pin="4"/>
+      <node ref="J_DIRTY_IN1" pin="2"/>
+      <node ref="J_CLEAN_IN1" pin="4"/>
+      <node ref="D_ON1" pin="1"/>
+      <node ref="C1_NEG2" pin="1"/>
+      <node ref="U_SAW_OA1" pin="5"/>
+      <node ref="R_SAW1" pin="2"/>
+      <node ref="U_NEG2" pin="3"/>
+      <node ref="U_PLL1" pin="5"/>
+      <node ref="J_AUX2MAIN_FX1" pin="3"/>
+      <node ref="C_RIP1" pin="2"/>
+      <node ref="J_AUX2MAIN_FXSW1" pin="5"/>
+    </net>
+    <net code="11" name="/Sheet5AC1BF71/SIG_OUT">
+      <node ref="R_OA_OUT_F1" pin="1"/>
+      <node ref="U_OAFX_OUT1" pin="6"/>
+      <node ref="U_OA_FXVOL1" pin="3"/>
+    </net>
+    <net code="12" name="Net-(J_DIRTY_IN1-Pad3)">
+      <node ref="J_DIRTY_IN1" pin="3"/>
+    </net>
+    <net code="13" name="Net-(J_AUX2MAIN_VOL1-Pad3)">
+      <node ref="J_AUX2MAIN_VOL1" pin="3"/>
+      <node ref="MIX1" pin="3"/>
+    </net>
+    <net code="14" name="Net-(J_AUX2MAIN_VOL1-Pad1)">
+      <node ref="J_AUX2MAIN_VOL1" pin="1"/>
+      <node ref="MIX1" pin="1"/>
+    </net>
+    <net code="15" name="Net-(J_AUX2MAIN_VOL1-Pad2)">
+      <node ref="MIX1" pin="2"/>
+      <node ref="J_AUX2MAIN_VOL1" pin="2"/>
+    </net>
+    <net code="16" name="Net-(J_MAIN2AUX_INSW1-Pad4)">
+      <node ref="J_MAIN2AUX_INSW1" pin="4"/>
+    </net>
+    <net code="17" name="/INSW_P2">
+      <node ref="J_MAIN2AUX_INSW1" pin="2"/>
+      <node ref="U_OAFX_IN1" pin="3"/>
+    </net>
+    <net code="18" name="/INSW_P1">
+      <node ref="J_MAIN2AUX_INSW1" pin="1"/>
+      <node ref="C_DIRTY_IN1" pin="2"/>
+      <node ref="U_OACLEAN_IN1" pin="3"/>
+    </net>
+    <net code="19" name="Net-(J_MAIN2AUX_VOL1-Pad4)">
+      <node ref="J_MAIN2AUX_VOL1" pin="4"/>
+    </net>
+    <net code="20" name="Net-(J_AUX2MAIN_VOL1-Pad4)">
+      <node ref="J_AUX2MAIN_VOL1" pin="4"/>
+    </net>
+    <net code="21" name="Net-(FXVOL1-Pad1)">
+      <node ref="FXVOL1" pin="2"/>
+      <node ref="FXVOL1" pin="1"/>
+      <node ref="J_AUX2MAIN_VOL1" pin="6"/>
+    </net>
+    <net code="22" name="Net-(FXVOL1-Pad3)">
+      <node ref="FXVOL1" pin="3"/>
+      <node ref="J_AUX2MAIN_VOL1" pin="5"/>
+    </net>
+    <net code="23" name="/FXVOL_P3">
+      <node ref="J_MAIN2AUX_VOL1" pin="1"/>
+      <node ref="U_OA_FXVOL1" pin="6"/>
+      <node ref="J_MAIN2AUX_VOL1" pin="5"/>
+    </net>
+    <net code="24" name="/FXVOL_P1_2">
+      <node ref="R_FXVOL1" pin="1"/>
+      <node ref="U_OA_FXVOL1" pin="2"/>
+      <node ref="J_MAIN2AUX_VOL1" pin="6"/>
+    </net>
+    <net code="25" name="/MIX_P3">
+      <node ref="U_OACLEAN_IN1" pin="2"/>
+      <node ref="U_OACLEAN_IN1" pin="6"/>
+      <node ref="J_MAIN2AUX_VOL1" pin="3"/>
+    </net>
+    <net code="26" name="/MIX_P2">
+      <node ref="J_MAIN2AUX_VOL1" pin="2"/>
+      <node ref="SW_BYPASS1" pin="6"/>
+    </net>
+    <net code="27" name="/INSW_P3">
+      <node ref="J_MAIN2AUX_INSW1" pin="3"/>
+      <node ref="C_CLEAN_IN1" pin="2"/>
+    </net>
+    <net code="28" name="Net-(J_AUX2MAIN_INSW1-Pad1)">
+      <node ref="J_AUX2MAIN_INSW1" pin="1"/>
+      <node ref="SW_INSW1" pin="1"/>
+    </net>
+    <net code="29" name="Net-(U_OA_MIX1-Pad8)">
+      <node ref="U_OA_MIX1" pin="8"/>
+    </net>
+    <net code="30" name="Net-(U_OACLEAN_IN1-Pad8)">
+      <node ref="U_OACLEAN_IN1" pin="8"/>
+    </net>
+    <net code="31" name="Net-(U_OACLEAN_IN1-Pad5)">
+      <node ref="U_OACLEAN_IN1" pin="5"/>
+    </net>
+    <net code="32" name="/-9V">
+      <node ref="C1_NEG1" pin="2"/>
+      <node ref="U_OACLEAN_IN1" pin="4"/>
+      <node ref="U_OA_MIX1" pin="4"/>
+      <node ref="U_OA_FXVOL1" pin="4"/>
+      <node ref="U_NEG1" pin="5"/>
+    </net>
+    <net code="33" name="Net-(U_OACLEAN_IN1-Pad1)">
+      <node ref="U_OACLEAN_IN1" pin="1"/>
+    </net>
+    <net code="34" name="/9V">
+      <node ref="D_IN1" pin="1"/>
+      <node ref="U_SAW_OA1" pin="8"/>
+      <node ref="U_OA_MIX1" pin="7"/>
+      <node ref="U_NEG1" pin="1"/>
+      <node ref="U_OAFX_OUT1" pin="7"/>
+      <node ref="U_OACLEAN_IN1" pin="7"/>
+      <node ref="U_NEG2" pin="1"/>
+      <node ref="U_NEG2" pin="8"/>
+      <node ref="SW_BYPASS1" pin="8"/>
+      <node ref="U_NEG1" pin="8"/>
+      <node ref="U_OAFX_IN1" pin="7"/>
+      <node ref="U_OA_FXVOL1" pin="7"/>
+      <node ref="U_PLL1" pin="16"/>
+    </net>
+    <net code="35" name="Net-(U_OA_MIX1-Pad5)">
+      <node ref="U_OA_MIX1" pin="5"/>
+    </net>
+    <net code="36" name="Net-(U_OA_MIX1-Pad1)">
+      <node ref="U_OA_MIX1" pin="1"/>
+    </net>
+    <net code="37" name="Net-(J_OU1-Pad3)">
+      <node ref="J_OU1" pin="3"/>
+    </net>
+    <net code="38" name="Net-(J_OU1-Pad2)">
+      <node ref="J_OU1" pin="2"/>
+    </net>
+    <net code="39" name="Net-(J_POWER1-Pad3)">
+      <node ref="J_POWER1" pin="3"/>
+    </net>
+    <net code="40" name="Net-(J_CLEAN_IN1-Pad3)">
+      <node ref="J_CLEAN_IN1" pin="3"/>
+    </net>
+    <net code="41" name="Net-(C_CLEAN_IN1-Pad1)">
+      <node ref="J_CLEAN_IN1" pin="1"/>
+      <node ref="C_CLEAN_IN1" pin="1"/>
+    </net>
+    <net code="42" name="Net-(U_NEG1-Pad7)">
+      <node ref="U_NEG1" pin="7"/>
+    </net>
+    <net code="43" name="Net-(U_NEG1-Pad6)">
+      <node ref="U_NEG1" pin="6"/>
+    </net>
+    <net code="44" name="Net-(C2_NEG1-Pad2)">
+      <node ref="U_NEG1" pin="4"/>
+      <node ref="C2_NEG1" pin="2"/>
+    </net>
+    <net code="45" name="Net-(C2_NEG1-Pad1)">
+      <node ref="U_NEG1" pin="2"/>
+      <node ref="C2_NEG1" pin="1"/>
+    </net>
+    <net code="46" name="Net-(C_RIP1-Pad1)">
+      <node ref="C_RIP1" pin="1"/>
+      <node ref="J_POWER1" pin="2"/>
+      <node ref="D_IN1" pin="2"/>
+    </net>
+    <net code="47" name="Net-(J_OU1-Pad1)">
+      <node ref="J_OU1" pin="1"/>
+      <node ref="U_OA_MIX1" pin="6"/>
+      <node ref="R_MIX_F1" pin="1"/>
+    </net>
+    <net code="48" name="Net-(R_MIX_F1-Pad2)">
+      <node ref="R_MIX_F1" pin="2"/>
+      <node ref="R_MIX_G1" pin="2"/>
+      <node ref="U_OA_MIX1" pin="2"/>
+    </net>
+    <net code="49" name="Net-(U_OA_FXVOL1-Pad8)">
+      <node ref="U_OA_FXVOL1" pin="8"/>
+    </net>
+    <net code="50" name="Net-(U_OA_FXVOL1-Pad5)">
+      <node ref="U_OA_FXVOL1" pin="5"/>
+    </net>
+    <net code="51" name="Net-(U_OA_FXVOL1-Pad1)">
+      <node ref="U_OA_FXVOL1" pin="1"/>
+    </net>
+    <net code="52" name="Net-(R_SAW1-Pad1)">
+      <node ref="U_SAW_OA1" pin="2"/>
+      <node ref="R_SAW2" pin="2"/>
+      <node ref="R_SAW1" pin="1"/>
+    </net>
+    <net code="53" name="Net-(C2_NEG2-Pad1)">
+      <node ref="U_NEG2" pin="2"/>
+      <node ref="C2_NEG2" pin="1"/>
+    </net>
+    <net code="54" name="Net-(C2_NEG2-Pad2)">
+      <node ref="U_NEG2" pin="4"/>
+      <node ref="C2_NEG2" pin="2"/>
+    </net>
+    <net code="55" name="/Sheet5AC1BF71/HOLDSEL_P3">
+      <node ref="J_AUX2MAIN_FXSW1" pin="6"/>
+      <node ref="C_HOLD2" pin="2"/>
+    </net>
+    <net code="56" name="/Sheet5AC1BF71/VCORETURN">
+      <node ref="U_SAW_OA1" pin="3"/>
+      <node ref="J_AUX2MAIN_FXSW1" pin="1"/>
+      <node ref="U_PLL1" pin="3"/>
+      <node ref="U_PLL1" pin="4"/>
+    </net>
+    <net code="57" name="Net-(C_SUSTAIN1-Pad2)">
+      <node ref="C_SUSTAIN1" pin="2"/>
+      <node ref="U_PLL1" pin="14"/>
+    </net>
+    <net code="58" name="/Sheet5AC1BF71/-9V">
+      <node ref="U_SAW_OA1" pin="4"/>
+      <node ref="U_OAFX_IN1" pin="4"/>
+      <node ref="U_NEG2" pin="5"/>
+      <node ref="U_OAFX_OUT1" pin="4"/>
+      <node ref="C1_NEG2" pin="2"/>
+    </net>
+    <net code="59" name="Net-(C_SAW1-Pad2)">
+      <node ref="R_SAW2" pin="1"/>
+      <node ref="C_SAW1" pin="2"/>
+      <node ref="U_SAW_OA1" pin="6"/>
+      <node ref="U_SAW_OA1" pin="1"/>
+    </net>
+    <net code="60" name="Net-(C_VCO1-Pad1)">
+      <node ref="U_PLL1" pin="6"/>
+      <node ref="C_VCO1" pin="1"/>
+    </net>
+    <net code="61" name="Net-(C_VCO1-Pad2)">
+      <node ref="U_PLL1" pin="7"/>
+      <node ref="C_VCO1" pin="2"/>
+    </net>
+    <net code="62" name="/Sheet5AC1BF71/HOLDSEL_P1">
+      <node ref="J_AUX2MAIN_FXSW1" pin="4"/>
+      <node ref="C_HOLD1" pin="2"/>
+    </net>
+    <net code="63" name="/Sheet5AC1BF71/WAVESEL_P2">
+      <node ref="J_AUX2MAIN_FXSW1" pin="2"/>
+      <node ref="R_OA_OUT1" pin="2"/>
+    </net>
+    <net code="64" name="/Sheet5AC1BF71/WAVESEL_P3">
+      <node ref="J_AUX2MAIN_FXSW1" pin="3"/>
+      <node ref="U_SAW_OA1" pin="7"/>
+      <node ref="C_SAW1" pin="1"/>
+    </net>
+    <net code="65" name="Net-(DAMPEN1-Pad1)">
+      <node ref="DAMPEN1" pin="1"/>
+      <node ref="J_MAIN2AUX_PLL1" pin="3"/>
+      <node ref="DAMPEN1" pin="2"/>
+    </net>
+    <net code="66" name="Net-(DAMPEN1-Pad3)">
+      <node ref="J_MAIN2AUX_PLL1" pin="4"/>
+      <node ref="DAMPEN1" pin="3"/>
+    </net>
+    <net code="67" name="/Sheet5AC1BF71/DAMP_P1_2">
+      <node ref="C_HOLD2" pin="1"/>
+      <node ref="C_LPF1" pin="1"/>
+      <node ref="J_AUX2MAIN_PLL1" pin="3"/>
+      <node ref="C_HOLD1" pin="1"/>
+    </net>
+    <net code="68" name="Net-(J_MAIN2AUX_PLL1-Pad1)">
+      <node ref="J_MAIN2AUX_PLL1" pin="1"/>
+      <node ref="SWING1" pin="3"/>
+    </net>
+    <net code="69" name="Net-(J_MAIN2AUX_FXSW1-Pad5)">
+      <node ref="J_MAIN2AUX_FXSW1" pin="5"/>
+      <node ref="SW_HOLD1" pin="2"/>
+    </net>
+    <net code="70" name="Net-(J_MAIN2AUX_FXSW1-Pad3)">
+      <node ref="SW_WAVE1" pin="3"/>
+      <node ref="J_MAIN2AUX_FXSW1" pin="3"/>
+    </net>
+    <net code="71" name="Net-(J_MAIN2AUX_FXSW1-Pad1)">
+      <node ref="J_MAIN2AUX_FXSW1" pin="1"/>
+      <node ref="SW_WAVE1" pin="1"/>
+    </net>
+    <net code="72" name="Net-(J_MAIN2AUX_FXSW1-Pad2)">
+      <node ref="J_MAIN2AUX_FXSW1" pin="2"/>
+      <node ref="SW_WAVE1" pin="2"/>
+    </net>
+    <net code="73" name="Net-(J_MAIN2AUX_FXSW1-Pad6)">
+      <node ref="SW_HOLD1" pin="3"/>
+      <node ref="J_MAIN2AUX_FXSW1" pin="6"/>
+    </net>
+    <net code="74" name="Net-(J_MAIN2AUX_FXSW1-Pad4)">
+      <node ref="J_MAIN2AUX_FXSW1" pin="4"/>
+      <node ref="SW_HOLD1" pin="1"/>
+    </net>
+    <net code="75" name="Net-(J_MAIN2AUX_FX1-Pad2)">
+      <node ref="TRIG1" pin="2"/>
+      <node ref="J_MAIN2AUX_FX1" pin="2"/>
+      <node ref="TRIG1" pin="1"/>
+    </net>
+    <net code="76" name="Net-(J_MAIN2AUX_FX1-Pad1)">
+      <node ref="J_MAIN2AUX_FX1" pin="1"/>
+      <node ref="TRIG1" pin="3"/>
+    </net>
+    <net code="77" name="/Sheet5AC1BF71/TRIG_P3">
+      <node ref="J_AUX2MAIN_FX1" pin="1"/>
+      <node ref="U_OAFX_IN1" pin="2"/>
+      <node ref="R_OA_IN1" pin="2"/>
+    </net>
+    <net code="78" name="/Sheet5AC1BF71/DAMP_P3">
+      <node ref="J_AUX2MAIN_PLL1" pin="2"/>
+      <node ref="U_PLL1" pin="9"/>
+      <node ref="C_SH1" pin="1"/>
+      <node ref="J_AUX2MAIN_PLL1" pin="4"/>
+    </net>
+    <net code="79" name="/Sheet5AC1BF71/SWING_P3">
+      <node ref="U_PLL1" pin="13"/>
+      <node ref="J_AUX2MAIN_PLL1" pin="1"/>
+    </net>
+    <net code="80" name="/Sheet5AC1BF71/FMOD_P2_P3">
+      <node ref="J_AUX2MAIN_FX1" pin="4"/>
+      <node ref="U_PLL1" pin="11"/>
+    </net>
+    <net code="81" name="/Sheet5AC1BF71/TRIG_P1_2">
+      <node ref="C_SUSTAIN1" pin="1"/>
+      <node ref="U_OAFX_IN1" pin="6"/>
+      <node ref="J_AUX2MAIN_FX1" pin="2"/>
+    </net>
+    <net code="82" name="Net-(J_MAIN2AUX_PLL1-Pad2)">
+      <node ref="J_MAIN2AUX_PLL1" pin="2"/>
+      <node ref="SWING1" pin="2"/>
+      <node ref="SWING1" pin="1"/>
+    </net>
+    <net code="83" name="Net-(FMOD1-Pad2)">
+      <node ref="FMOD1" pin="3"/>
+      <node ref="J_MAIN2AUX_FX1" pin="4"/>
+      <node ref="FMOD1" pin="2"/>
+    </net>
+    <net code="84" name="Net-(FMOD1-Pad1)">
+      <node ref="J_MAIN2AUX_FX1" pin="3"/>
+      <node ref="FMOD1" pin="1"/>
+    </net>
+    <net code="85" name="Net-(U_OAFX_OUT1-Pad5)">
+      <node ref="U_OAFX_OUT1" pin="5"/>
+    </net>
+    <net code="86" name="Net-(U_OAFX_OUT1-Pad1)">
+      <node ref="U_OAFX_OUT1" pin="1"/>
+    </net>
+    <net code="87" name="Net-(U_OAFX_OUT1-Pad8)">
+      <node ref="U_OAFX_OUT1" pin="8"/>
+    </net>
+    <net code="88" name="Net-(R_OA_OUT1-Pad1)">
+      <node ref="R_OA_OUT_F1" pin="2"/>
+      <node ref="R_OA_OUT1" pin="1"/>
+      <node ref="U_OAFX_OUT1" pin="2"/>
+    </net>
+    <net code="89" name="Net-(U_PLL1-Pad12)">
+      <node ref="U_PLL1" pin="12"/>
+    </net>
+    <net code="90" name="Net-(U_OAFX_IN1-Pad5)">
+      <node ref="U_OAFX_IN1" pin="5"/>
+    </net>
+    <net code="91" name="Net-(U_OAFX_IN1-Pad1)">
+      <node ref="U_OAFX_IN1" pin="1"/>
+    </net>
+    <net code="92" name="Net-(U_PLL1-Pad15)">
+      <node ref="U_PLL1" pin="15"/>
+    </net>
+    <net code="93" name="Net-(U_PLL1-Pad10)">
+      <node ref="U_PLL1" pin="10"/>
+    </net>
+    <net code="94" name="Net-(U_PLL1-Pad2)">
+      <node ref="U_PLL1" pin="2"/>
+    </net>
+    <net code="95" name="Net-(U_PLL1-Pad1)">
+      <node ref="U_PLL1" pin="1"/>
+    </net>
+    <net code="96" name="Net-(U_OAFX_IN1-Pad8)">
+      <node ref="U_OAFX_IN1" pin="8"/>
+    </net>
+    <net code="97" name="Net-(U_NEG2-Pad7)">
+      <node ref="U_NEG2" pin="7"/>
+    </net>
+    <net code="98" name="Net-(U_NEG2-Pad6)">
+      <node ref="U_NEG2" pin="6"/>
+    </net>
+  </nets>
+</export>

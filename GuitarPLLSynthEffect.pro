@@ -1,4 +1,4 @@
-update=02-04-2018 12:42:20 PM
+update=02-04-2018 10:01:46 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -69,13 +69,16 @@ LibName37=lib/pot_numbered
 LibName38=lib/socket_custom
 LibName39=lib/_TL071
 LibName40=lib/_TC7662b
+LibName41=lib/_schottky
+LibName42=lib/sw_custom
+LibName43=lib/_TL072
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
 PlotDirectoryName=docs/
 SubpartIdSeparator=0
 SubpartFirstId=65
-NetFmtName=
+NetFmtName=Pcbnew
 SpiceForceRefPrefix=0
 SpiceUseNetNumbers=0
-LabSize=60
+LabSize=39
