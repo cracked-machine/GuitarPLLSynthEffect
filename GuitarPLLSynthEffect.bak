@@ -48,14 +48,14 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 2
-Title ""
-Date ""
-Rev ""
+Title "PLL Synth Effects Pedal"
+Date "2018-04-02"
+Rev "A"
 Comp ""
-Comment1 ""
-Comment2 ""
-Comment3 ""
-Comment4 ""
+Comment1 "FX Vol and Blend controls"
+Comment2 "Optional clean signal input for better tracking"
+Comment3 "Selectable square and Sawtooth voices"
+Comment4 "PLL Synth effect with variable controls"
 $EndDescr
 $Comp
 L JACK__MONO_2P_NC J_CLEAN_IN1
