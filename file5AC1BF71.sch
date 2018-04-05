@@ -157,17 +157,6 @@ F 3 "" H 1475 7075 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L C C_SH1
-U 1 1 5AC1C6CB
-P 6575 4375
-F 0 "C_SH1" H 6600 4475 50  0000 L CNN
-F 1 "100nF" H 6600 4275 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6613 4225 50  0001 C CNN
-F 3 "" H 6575 4375 50  0001 C CNN
-	1    6575 4375
-	1    0    0    -1  
-$EndComp
-$Comp
 L _TL071 U_OAFX_OUT1
 U 1 1 5AC1C6D7
 P 10500 2875
@@ -228,8 +217,6 @@ GND
 Text HLabel 4400 4375 3    60   Input ~ 0
 GND
 Text HLabel 5200 4350 3    60   Input ~ 0
-GND
-Text HLabel 6575 4950 3    60   Input ~ 0
 GND
 Text HLabel 7625 5800 3    60   Input ~ 0
 GND
@@ -532,10 +519,6 @@ Wire Wire Line
 	10400 3175 10400 3550
 Wire Wire Line
 	10400 2125 10400 2575
-Wire Wire Line
-	6575 4525 6575 4950
-Wire Wire Line
-	6575 3475 6575 4225
 Connection ~ 7625 4900
 Wire Wire Line
 	7400 4550 7475 4550
@@ -543,8 +526,6 @@ Wire Wire Line
 	7400 4900 7400 4550
 Wire Wire Line
 	7400 4900 9200 4900
-Wire Wire Line
-	7625 4125 6575 4125
 Wire Wire Line
 	3950 3675 3950 3950
 Wire Wire Line
@@ -677,7 +658,6 @@ Wire Wire Line
 	7750 1525 7925 1525
 Wire Wire Line
 	6575 3475 5900 3475
-Connection ~ 6575 4125
 Wire Wire Line
 	9200 4900 9200 4950
 Connection ~ 8250 4900
@@ -818,7 +798,7 @@ Wire Wire Line
 Connection ~ 1475 6875
 Text Notes 7550 3550 0    39   ~ 0
 PLL SWING\nCONTROL \nB1M POT
-Text Notes 7550 4600 0    39   ~ 0
+Text Notes 7550 4625 0    39   ~ 0
 PLL DAMPEN\nCONTROL \nB100K POT
 Text Label 8850 2875 1    39   ~ 0
 WAVESEL_P3
@@ -1073,4 +1053,8 @@ F 3 "" H 7600 1525 50  0001 C CNN
 	1    7600 1525
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	6575 3475 6575 4125
+Wire Wire Line
+	6575 4125 7625 4125
 $EndSCHEMATC
