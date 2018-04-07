@@ -477,6 +477,192 @@ Text Label 3950 4275 3    60   ~ 0
 FMOD_P1
 Text Label 3950 3800 2    60   ~ 0
 FMOD_P2_P3
+Text Label 3200 5775 2    60   ~ 0
+TRIG_P3
+Text Label 3200 5875 2    60   ~ 0
+TRIG_P1_2
+Text Label 3200 5975 2    60   ~ 0
+FMOD_P1
+Text Label 3200 6075 2    60   ~ 0
+FMOD_P2_P3
+Text Notes 2450 4200 0    39   ~ 0
+ PLL INPUT\nTRIGGER \nB10K POT\n
+Text Notes 3875 4150 0    39   ~ 0
+FREQUENCY\nMOD B50K POT
+Text Label 7350 3275 0    39   ~ 0
+SWING_P3
+Text Label 7350 3875 1    39   ~ 0
+SWING_P2_1
+Text Label 7625 4400 1    39   ~ 0
+DAMP_P3
+Text Label 7400 4875 1    39   ~ 0
+DAMP_P1_2
+Text Label 3200 6775 2    39   ~ 0
+SWING_P2_1
+Text Label 3200 6675 2    39   ~ 0
+SWING_P3
+Text Label 3200 6975 2    39   ~ 0
+DAMP_P3
+Text Label 3200 6875 2    39   ~ 0
+DAMP_P1_2
+Text Notes 7550 3550 0    39   ~ 0
+PLL SWING\nCONTROL \nB1M POT
+Text Notes 7550 4625 0    39   ~ 0
+PLL DAMPEN\nCONTROL \nB100K POT
+Text Label 8850 2875 1    39   ~ 0
+WAVESEL_P3
+Text Label 8500 3075 2    39   ~ 0
+WAVESEL_P1
+Text Label 8975 2975 0    39   ~ 0
+WAVESEL_P2
+Text Label 8725 5875 0    39   ~ 0
+HOLDSEL_P2
+Text Label 8825 5325 0    39   ~ 0
+HOLDSEL_P3
+Text Label 8625 5325 2    39   ~ 0
+HOLDSEL_P1
+Text Label 6275 6275 2    39   ~ 0
+WAVESEL_P3
+Text Label 6275 6075 2    39   ~ 0
+WAVESEL_P1
+Text Label 6275 6175 2    39   ~ 0
+WAVESEL_P2
+Text Label 6275 6375 2    39   ~ 0
+HOLDSEL_P1
+Text Label 6275 6475 2    39   ~ 0
+HOLDSEL_P2
+Text Label 6275 6575 2    39   ~ 0
+HOLDSEL_P3
+Text Notes 8550 5650 0    39   ~ 0
+PLL SAMPLE AND\nHOLD SEL \nSPDT SWITCH
+Text Notes 8575 3150 0    39   ~ 0
+PLL SQUARE/\nRAMP \nSELECTOR \nSPDT SWITCH
+$Comp
+L C C_OABY7
+U 1 1 5AC4BA5A
+P 2050 2575
+F 0 "C_OABY7" V 1875 2300 50  0000 L CNN
+F 1 "100nF" V 1975 2300 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2088 2425 50  0001 C CNN
+F 3 "" H 2050 2575 50  0001 C CNN
+	1    2050 2575
+	0    1    1    0   
+$EndComp
+Text HLabel 1775 2675 3    60   Input ~ 0
+GND
+$Comp
+L C C_OABY8
+U 1 1 5AC4C7DB
+P 2050 3425
+F 0 "C_OABY8" V 1875 3150 50  0000 L CNN
+F 1 "100nF" V 1975 3150 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2088 3275 50  0001 C CNN
+F 3 "" H 2050 3425 50  0001 C CNN
+	1    2050 3425
+	0    1    1    0   
+$EndComp
+Text HLabel 1775 3600 3    60   Input ~ 0
+GND
+$Comp
+L C C_OABY9
+U 1 1 5AC4DFB8
+P 6600 975
+F 0 "C_OABY9" V 6425 700 50  0000 L CNN
+F 1 "100nF" V 6525 700 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6638 825 50  0001 C CNN
+F 3 "" H 6600 975 50  0001 C CNN
+	1    6600 975 
+	0    1    1    0   
+$EndComp
+Text HLabel 6325 1075 3    60   Input ~ 0
+GND
+$Comp
+L C C_OABY10
+U 1 1 5AC4EE84
+P 6650 1825
+F 0 "C_OABY10" V 6525 1550 50  0000 L CNN
+F 1 "100nF" V 6725 1550 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6688 1675 50  0001 C CNN
+F 3 "" H 6650 1825 50  0001 C CNN
+	1    6650 1825
+	0    1    1    0   
+$EndComp
+Text HLabel 6300 1925 3    60   Input ~ 0
+GND
+$Comp
+L C C_OABY12
+U 1 1 5AC50D51
+P 10200 3400
+F 0 "C_OABY12" V 10075 3100 50  0000 L CNN
+F 1 "100nF" V 10150 3100 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 10238 3250 50  0001 C CNN
+F 3 "" H 10200 3400 50  0001 C CNN
+	1    10200 3400
+	0    1    1    0   
+$EndComp
+Text HLabel 10000 3500 3    60   Input ~ 0
+GND
+$Comp
+L C C_OABY11
+U 1 1 5AC516B4
+P 10125 2350
+F 0 "C_OABY11" V 9950 2075 50  0000 L CNN
+F 1 "100nF" V 10050 2075 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 10163 2200 50  0001 C CNN
+F 3 "" H 10125 2350 50  0001 C CNN
+	1    10125 2350
+	0    1    1    0   
+$EndComp
+Text HLabel 9700 2425 3    60   Input ~ 0
+GND
+$Comp
+L C C_OABY13
+U 1 1 5AC56DA7
+P 4975 2575
+F 0 "C_OABY13" V 4800 2300 50  0000 L CNN
+F 1 "100nF" V 4900 2300 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 5013 2425 50  0001 C CNN
+F 3 "" H 4975 2575 50  0001 C CNN
+	1    4975 2575
+	0    1    1    0   
+$EndComp
+Text HLabel 4700 2625 3    60   Input ~ 0
+GND
+$Comp
+L C C_PWRBY3
+U 1 1 5AC584C7
+P 2950 1425
+F 0 "C_PWRBY3" H 3100 1375 50  0000 L CNN
+F 1 "100nF" H 3250 1475 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2988 1275 50  0001 C CNN
+F 3 "" H 2950 1425 50  0001 C CNN
+	1    2950 1425
+	-1   0    0    1   
+$EndComp
+Text HLabel 2950 2050 3    60   Input ~ 0
+GND
+$Comp
+L R R_SWING1
+U 1 1 5AC55D40
+P 6600 3275
+F 0 "R_SWING1" V 6680 3275 50  0000 C CNN
+F 1 "22K" V 6600 3275 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6530 3275 50  0001 C CNN
+F 3 "" H 6600 3275 50  0001 C CNN
+	1    6600 3275
+	0    1    1    0   
+$EndComp
+$Comp
+L R R_SAWJOIN1
+U 1 1 5AC5CB3E
+P 7600 1525
+F 0 "R_SAWJOIN1" V 7680 1525 50  0000 C CNN
+F 1 "10R" V 7600 1525 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7530 1525 50  0001 C CNN
+F 3 "" H 7600 1525 50  0001 C CNN
+	1    7600 1525
+	0    1    1    0   
+$EndComp
 Wire Wire Line
 	10700 3850 10900 3850
 Wire Wire Line
@@ -708,8 +894,6 @@ Wire Wire Line
 	6275 6475 5575 6475
 Wire Wire Line
 	6275 6575 5575 6575
-Text Label 3200 5775 2    60   ~ 0
-TRIG_P3
 Wire Wire Line
 	1575 5675 1700 5675
 Wire Wire Line
@@ -725,8 +909,6 @@ Wire Wire Line
 Wire Wire Line
 	1200 5675 1275 5675
 Connection ~ 1425 5875
-Text Label 3200 5875 2    60   ~ 0
-TRIG_P1_2
 Wire Wire Line
 	1800 5975 1575 5975
 Wire Wire Line
@@ -742,26 +924,6 @@ Wire Wire Line
 Wire Wire Line
 	1200 5975 1200 6175
 Connection ~ 1425 6175
-Text Label 3200 5975 2    60   ~ 0
-FMOD_P1
-Text Label 3200 6075 2    60   ~ 0
-FMOD_P2_P3
-Text Notes 2450 4200 0    39   ~ 0
- PLL INPUT\nTRIGGER \nB10K POT\n
-Text Notes 3875 4150 0    39   ~ 0
-FREQUENCY\nMOD B50K POT
-Text Label 7350 3275 0    39   ~ 0
-SWING_P3
-Text Label 7350 3875 1    39   ~ 0
-SWING_P2_1
-Text Label 7625 4400 1    39   ~ 0
-DAMP_P3
-Text Label 7400 4875 1    39   ~ 0
-DAMP_P1_2
-Text Label 3200 6775 2    39   ~ 0
-SWING_P2_1
-Text Label 3200 6675 2    39   ~ 0
-SWING_P3
 Wire Wire Line
 	1325 6575 1250 6575
 Wire Wire Line
@@ -781,10 +943,6 @@ Wire Wire Line
 	1250 6875 1800 6875
 Wire Wire Line
 	1475 6875 1475 6925
-Text Label 3200 6975 2    39   ~ 0
-DAMP_P3
-Text Label 3200 6875 2    39   ~ 0
-DAMP_P1_2
 Wire Wire Line
 	1625 7075 1700 7075
 Wire Wire Line
@@ -796,34 +954,6 @@ Wire Wire Line
 Wire Wire Line
 	1250 7075 1250 6875
 Connection ~ 1475 6875
-Text Notes 7550 3550 0    39   ~ 0
-PLL SWING\nCONTROL \nB1M POT
-Text Notes 7550 4625 0    39   ~ 0
-PLL DAMPEN\nCONTROL \nB100K POT
-Text Label 8850 2875 1    39   ~ 0
-WAVESEL_P3
-Text Label 8500 3075 2    39   ~ 0
-WAVESEL_P1
-Text Label 8975 2975 0    39   ~ 0
-WAVESEL_P2
-Text Label 8725 5875 0    39   ~ 0
-HOLDSEL_P2
-Text Label 8825 5325 0    39   ~ 0
-HOLDSEL_P3
-Text Label 8625 5325 2    39   ~ 0
-HOLDSEL_P1
-Text Label 6275 6275 2    39   ~ 0
-WAVESEL_P3
-Text Label 6275 6075 2    39   ~ 0
-WAVESEL_P1
-Text Label 6275 6175 2    39   ~ 0
-WAVESEL_P2
-Text Label 6275 6375 2    39   ~ 0
-HOLDSEL_P1
-Text Label 6275 6475 2    39   ~ 0
-HOLDSEL_P2
-Text Label 6275 6575 2    39   ~ 0
-HOLDSEL_P3
 Wire Wire Line
 	3975 6450 3900 6450
 Wire Wire Line
@@ -868,151 +998,43 @@ Wire Wire Line
 	3900 6200 3900 6275
 Wire Wire Line
 	3900 6275 4875 6275
-Text Notes 8550 5650 0    39   ~ 0
-PLL SAMPLE AND\nHOLD SEL \nSPDT SWITCH
-Text Notes 8575 3150 0    39   ~ 0
-PLL SQUARE/\nRAMP \nSELECTOR \nSPDT SWITCH
-$Comp
-L C C_OABY7
-U 1 1 5AC4BA5A
-P 2050 2575
-F 0 "C_OABY7" V 1875 2300 50  0000 L CNN
-F 1 "100nF" V 1975 2300 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2088 2425 50  0001 C CNN
-F 3 "" H 2050 2575 50  0001 C CNN
-	1    2050 2575
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	1775 2575 1900 2575
-Text HLabel 1775 2675 3    60   Input ~ 0
-GND
-$Comp
-L C C_OABY8
-U 1 1 5AC4C7DB
-P 2050 3425
-F 0 "C_OABY8" V 1875 3150 50  0000 L CNN
-F 1 "100nF" V 1975 3150 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2088 3275 50  0001 C CNN
-F 3 "" H 2050 3425 50  0001 C CNN
-	1    2050 3425
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	1775 3425 1900 3425
-Text HLabel 1775 3600 3    60   Input ~ 0
-GND
 Wire Wire Line
 	2200 3425 2325 3425
 Connection ~ 2325 3425
 Wire Wire Line
 	1775 3600 1775 3425
-$Comp
-L C C_OABY9
-U 1 1 5AC4DFB8
-P 6600 975
-F 0 "C_OABY9" V 6425 700 50  0000 L CNN
-F 1 "100nF" V 6525 700 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6638 825 50  0001 C CNN
-F 3 "" H 6600 975 50  0001 C CNN
-	1    6600 975 
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	6325 975  6450 975 
-Text HLabel 6325 1075 3    60   Input ~ 0
-GND
 Wire Wire Line
 	6750 975  6850 975 
 Connection ~ 6850 975 
-$Comp
-L C C_OABY10
-U 1 1 5AC4EE84
-P 6650 1825
-F 0 "C_OABY10" V 6525 1550 50  0000 L CNN
-F 1 "100nF" V 6725 1550 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6688 1675 50  0001 C CNN
-F 3 "" H 6650 1825 50  0001 C CNN
-	1    6650 1825
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	6300 1825 6500 1825
-Text HLabel 6300 1925 3    60   Input ~ 0
-GND
 Wire Wire Line
 	6850 1825 6800 1825
-$Comp
-L C C_OABY12
-U 1 1 5AC50D51
-P 10200 3400
-F 0 "C_OABY12" V 10075 3100 50  0000 L CNN
-F 1 "100nF" V 10150 3100 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 10238 3250 50  0001 C CNN
-F 3 "" H 10200 3400 50  0001 C CNN
-	1    10200 3400
-	0    1    1    0   
-$EndComp
-Text HLabel 10000 3500 3    60   Input ~ 0
-GND
 Wire Wire Line
 	10000 3500 10000 3400
 Wire Wire Line
 	10000 3400 10050 3400
-$Comp
-L C C_OABY11
-U 1 1 5AC516B4
-P 10125 2350
-F 0 "C_OABY11" V 9950 2075 50  0000 L CNN
-F 1 "100nF" V 10050 2075 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 10163 2200 50  0001 C CNN
-F 3 "" H 10125 2350 50  0001 C CNN
-	1    10125 2350
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	9700 2350 9975 2350
-Text HLabel 9700 2425 3    60   Input ~ 0
-GND
 Wire Wire Line
 	10350 3400 10400 3400
 Connection ~ 10400 3400
 Wire Wire Line
 	10275 2350 10400 2350
 Connection ~ 10400 2350
-$Comp
-L C C_OABY13
-U 1 1 5AC56DA7
-P 4975 2575
-F 0 "C_OABY13" V 4800 2300 50  0000 L CNN
-F 1 "100nF" V 4900 2300 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 5013 2425 50  0001 C CNN
-F 3 "" H 4975 2575 50  0001 C CNN
-	1    4975 2575
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	4700 2575 4825 2575
-Text HLabel 4700 2625 3    60   Input ~ 0
-GND
 Wire Wire Line
 	5125 2575 5200 2575
 Connection ~ 5200 2575
-$Comp
-L C C_PWRBY3
-U 1 1 5AC584C7
-P 2950 1425
-F 0 "C_PWRBY3" H 3100 1375 50  0000 L CNN
-F 1 "100nF" H 3250 1475 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2988 1275 50  0001 C CNN
-F 3 "" H 2950 1425 50  0001 C CNN
-	1    2950 1425
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	2950 2050 2950 1575
-Text HLabel 2950 2050 3    60   Input ~ 0
-GND
 Connection ~ 2950 1150
 Wire Wire Line
 	2200 2575 2325 2575
@@ -1025,34 +1047,12 @@ Wire Wire Line
 	6325 975  6325 1075
 Wire Wire Line
 	9700 2425 9700 2350
-$Comp
-L R R_SWING1
-U 1 1 5AC55D40
-P 6600 3275
-F 0 "R_SWING1" V 6680 3275 50  0000 C CNN
-F 1 "22K" V 6600 3275 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 6530 3275 50  0001 C CNN
-F 3 "" H 6600 3275 50  0001 C CNN
-	1    6600 3275
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	5900 3275 6450 3275
 Wire Wire Line
 	6750 3275 7625 3275
 Wire Wire Line
 	6300 1825 6300 1925
-$Comp
-L R R_SAWJOIN1
-U 1 1 5AC5CB3E
-P 7600 1525
-F 0 "R_SAWJOIN1" V 7680 1525 50  0000 C CNN
-F 1 "10R" V 7600 1525 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 7530 1525 50  0001 C CNN
-F 3 "" H 7600 1525 50  0001 C CNN
-	1    7600 1525
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	6575 3475 6575 4125
 Wire Wire Line

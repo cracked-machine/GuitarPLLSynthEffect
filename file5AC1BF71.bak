@@ -798,7 +798,7 @@ Wire Wire Line
 Connection ~ 1475 6875
 Text Notes 7550 3550 0    39   ~ 0
 PLL SWING\nCONTROL \nB1M POT
-Text Notes 7550 4600 0    39   ~ 0
+Text Notes 7550 4625 0    39   ~ 0
 PLL DAMPEN\nCONTROL \nB100K POT
 Text Label 8850 2875 1    39   ~ 0
 WAVESEL_P3
