@@ -94,7 +94,6 @@ Text Label 6500 3075 0    60   ~ 0
 VCORETURN
 Text Label 3975 3175 0    60   ~ 0
 VCORETURN
-NoConn ~ 5900 3675
 NoConn ~ 5900 3175
 NoConn ~ 5900 3775
 NoConn ~ 4500 3775
@@ -973,5 +972,18 @@ F 2 "SMD_Packages:SOIC-8-N" H 10500 2875 50  0001 C CNN
 F 3 "" H 10500 2875 50  0001 C CNN
 	2    10500 2875
 	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 3675 6025 3675
+$Comp
+L TEST_1P JTP1
+U 1 1 5AEB993D
+P 6025 3675
+F 0 "JTP1" V 5925 3800 50  0000 C CNN
+F 1 "TEST_1P" H 6025 3875 50  0001 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 6225 3675 50  0001 C CNN
+F 3 "" H 6225 3675 50  0001 C CNN
+	1    6025 3675
+	0    1    1    0   
 $EndComp
 $EndSCHEMATC
