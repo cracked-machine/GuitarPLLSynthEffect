@@ -95,7 +95,6 @@ VCORETURN
 Text Label 3975 3175 0    60   ~ 0
 VCORETURN
 NoConn ~ 5900 3175
-NoConn ~ 5900 3775
 NoConn ~ 4500 3775
 $Comp
 L C C_LPF1
@@ -108,7 +107,6 @@ F 3 "" H 7625 5100 50  0001 C CNN
 	1    7625 5100
 	1    0    0    -1  
 $EndComp
-NoConn ~ 5900 3875
 $Comp
 L NPOT SWING1
 U 1 1 5AC1C6AC
@@ -986,4 +984,27 @@ F 3 "" H 6225 3675 50  0001 C CNN
 	1    6025 3675
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	5900 3875 5950 3875
+Text HLabel 5950 3875 2    60   Input ~ 0
+9V
+$Comp
+L R R_SFOUT1
+U 1 1 5AEE652B
+P 6275 4000
+F 0 "R_SFOUT1" V 6355 4000 50  0000 C CNN
+F 1 "100K" V 6275 4000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6205 4000 50  0001 C CNN
+F 3 "" H 6275 4000 50  0001 C CNN
+	1    6275 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 3775 6275 3775
+Wire Wire Line
+	6275 3775 6275 3850
+Wire Wire Line
+	6275 4150 6275 4300
+Text Label 6275 4300 1    39   ~ 0
+GND
 $EndSCHEMATC
