@@ -1,15 +1,13 @@
-#PLL based Guitar Synth Pedal
+# PLL based Guitar Synth Pedal
 
 
-#TODO
+## TODO
 
-<ol>
-  <li>Tie ZENER input (pin 15) to VDD to help regulate supply current.</li>
-  <li>Use SF_OUT (pin 10) to prevent loading of filter loop. Use net-tie so connection can be cut/resoldered. 100Kohm.</li>
-  <li></li>
-  <li></li>
-  
-</ol>
+1. Remove J_CLEAN_IN1 input and C_CLEAN_IN1 cap. Remove SW_INSW1 (tie pins 3 and 1)
+2. Confirm positions of SW_WAVE1 and SW_HOLD1 (they appear to be swapped)
+3. Switching waveselect lowers volume. Is gain on sawtooth input that is too low? 
+4. Replace waveselect switch with pot so that mix can be achieved between default square and integrated sq./sawtooth.
 
-<br><br><br><br>
 <a href="https://cracked-machine.github.io/GuitarPLLSynthEffect/">Pages</a>
+
+
